@@ -1,0 +1,46 @@
+info:
+  name: Orders Entry
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/diagnostics/lab/orders
+  body:
+    type: json
+    data: "{\r
+
+      \  \"patientId\": \"1\",\r
+
+      \  \"doctorId\": \"1\",\r
+
+      \  \"priority\": \"normal\",\r
+
+      \  \"tests\": [\r
+
+      \    { \"testId\": 1, \"testCode\": \"CBC\" },\r
+
+      \    { \"testId\": 2, \"testCode\": \"CRP\" }\r
+
+      \  ],\r
+
+      \  \"notes\": \"Patient fasting\",\r
+
+      \  \"sample\": {\r
+
+      \    \"type\": \"BLOOD\",\r
+
+      \    \"collectionTime\": \"2026-02-19T10:30:00Z\"\r
+
+      \  }\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmFkaW9sb2dpc3RfdXNlciIsImVtYWlsIjoicmFkaW9sb2dpc3RAaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMDYiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6Niwicm9sZV9jb2RlIjoicmFkaW9sb2dpc3QiLCJpYXQiOjE3NzEzOTc3OTgsImV4cCI6MTc4Njk0OTc5OH0.Kn6RJbfQk0gmCcZxXCbdKDD65S81_KzyS5q_v7JU-ew
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

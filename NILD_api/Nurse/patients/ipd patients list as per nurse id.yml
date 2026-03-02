@@ -1,0 +1,55 @@
+info:
+  name: ipd patients list as per nurse id
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/nurse/patients/ipd/list?page=1&limit=20
+  params:
+    - name: ward_id
+      value: "2"
+      type: query
+      disabled: true
+    - name: bed_id
+      value: "12"
+      type: query
+      disabled: true
+    - name: status
+      value: admitted
+      type: query
+      disabled: true
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "20"
+      type: query
+    - name: search
+      value: Rajan
+      type: query
+      disabled: true
+    - name: nurse_id
+      value: "6"
+      type: query
+      disabled: true
+  body:
+    type: text
+    data: "{\r
+
+      \    \"tenant_id\": 1,\r
+
+      \    \"identifier\": \"dietician_user\",\r
+
+      \    \"password\": \"Admin@123\"\r
+
+      \  }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzIxMDczNTEsImV4cCI6MTc4NzY1OTM1MX0.7g0WDZExlA6_1h4_N5bgVvFHggbkH-PE7lkqCX95oGM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

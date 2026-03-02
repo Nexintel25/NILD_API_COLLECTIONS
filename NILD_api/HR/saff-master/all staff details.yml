@@ -1,0 +1,27 @@
+info:
+  name: all staff details
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:5000/api/hr/staff-master/staff?page=1&pageSize=10
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImhyX21hbmFnZXIiLCJlbWFpbCI6ImhyLm1hbmFnZXJAZXhhbXBsZS5jb20iLCJlbXBsb3llZV9pZCI6IkVNUC1IUi0wMDEiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MjgsInJvbGVfY29kZSI6IkhSIiwiaWF0IjoxNzcxNDA4NjEwLCJleHAiOjE3ODY5NjA2MTB9.Z1Hp-XSWgSy_fJSUzwDCVZ7X3oOGLP5mFZYyot1cAOY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

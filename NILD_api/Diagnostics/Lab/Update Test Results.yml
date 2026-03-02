@@ -1,0 +1,74 @@
+info:
+  name: Update Test Results
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5000/api/diagnostics/lab/reports
+  body:
+    type: json
+    data: "{\r
+
+      \  \"orderId\": 101,\r
+
+      \  \"results\": [\r
+
+      \    {\r
+
+      \      \"testId\": 5,\r
+
+      \      \"result\": \"5.2\",\r
+
+      \      \"referenceRange\": \"4.5-5.5\",\r
+
+      \      \"unit\": \"million/μL\",\r
+
+      \      \"status\": \"completed\",\r
+
+      \      \"notes\": \"Patient was fasting\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"testId\": 8,\r
+
+      \      \"result\": \"180\",\r
+
+      \      \"referenceRange\": \"<200\",\r
+
+      \      \"unit\": \"mg/dL\",\r
+
+      \      \"status\": \"completed\",\r
+
+      \      \"notes\": \"Fasting sample – normal\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"testId\": 12,\r
+
+      \      \"result\": \"Negative\",\r
+
+      \      \"referenceRange\": \"Negative\",\r
+
+      \      \"unit\": \"\",\r
+
+      \      \"status\": \"completed\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoibGFiX3RlY2hfdXNlciIsImVtYWlsIjoibGFidGVjaEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJsYWJfdGVjaCIsImlhdCI6MTc3MTMxMTcyOSwiZXhwIjoxNzg2ODYzNzI5fQ.JhrL_1Uq4pMvM0s3USCYurTJTJObB_HeJrBlEthCaSE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

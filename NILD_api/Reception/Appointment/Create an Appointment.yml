@@ -1,0 +1,46 @@
+info:
+  name: Create an Appointment
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/appointments
+  body:
+    type: json
+    data: "\r
+
+      \  {\r
+
+      \    \"patient_id\": 3,\r
+
+      \    \"doctor_id\": 5,\r
+
+      \    \"department_id\": 2,\r
+
+      \    \"appointment_date\": \"2026-03-13\",\r
+
+      \    \"slot_start\": \"11:30\",\r
+
+      \    \"slot_end\": \"11:45\",\r
+
+      \    \"appointment_type\": \"DIAGNOSTIC\",\r
+
+      \    \"reason\": \"Follow-up consultation for knee pain and rehab progress review\",\r
+
+      \    \"notes\": \"Review MRI/op notes, assess pain score, update rehab plan. Patient prefers morning slots.\"\r
+
+      \  }\r
+
+      \r
+
+      \ "
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWNlcHRpb24iLCJlbWFpbCI6InJlY2VwdGlvbkBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiUkVDMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo5LCJyb2xlX2NvZGUiOiJSRUNFUFRJT05fRlJPTlRfT0ZGSUNFIiwiaWF0IjoxNzcxODMxNTA2LCJleHAiOjE3ODczODM1MDZ9.lYQz5ygreKjE0UWdCXSuoREbfZj0p2FoOM1jDAco7dE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

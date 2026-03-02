@@ -1,0 +1,35 @@
+info:
+  name: PriorityLevel wise Patient Show
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:5000/api/emergency?priorityLevel=Critical&limit=10
+  headers:
+    - name: Content-Type
+      value: application/json
+  params:
+    - name: priorityLevel
+      value: Critical
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+          "tenant_id": 1,
+          "identifier": "management_user",
+          "password": "Admin@123"
+        }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: Preview payroll run
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/payroll/runs/preview
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"cycle_id":1}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImhyX21hbmFnZXIiLCJlbWFpbCI6ImhyLm1hbmFnZXJAZXhhbXBsZS5jb20iLCJlbXBsb3llZV9pZCI6IkVNUC1IUi0wMDEiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MjgsInJvbGVfY29kZSI6IkhSIiwiaWF0IjoxNzcxNDE0NjU4LCJleHAiOjE3ODY5NjY2NTh9.cCL33IlZIdNwQS_Urb962h5JBU8kojiBXtUCOqoifdQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

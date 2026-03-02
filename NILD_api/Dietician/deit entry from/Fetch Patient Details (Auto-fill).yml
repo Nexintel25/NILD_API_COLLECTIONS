@@ -1,0 +1,20 @@
+info:
+  name: Fetch Patient Details (Auto-fill)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/dietician/patients/NILD-20260213-0003
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEB0ZXN0LmNvbSIsImVtcGxveWVlX2lkIjo3LCJmYWNpbGl0eV9pZCI6MSwiZGVwYXJ0bWVudF9pZCI6bnVsbCwicm9sZV9pZCI6Niwicm9sZV9jb2RlIjoidGhlcmFwaXN0Iiwicm9sZV9uYW1lIjoiVGhlcmFwaXN0IiwiaWF0IjoxNzM3NjQyMDkwLCJleHAiOjE3Mzc3Mjg0OTB9.YGMKZI_A8UB9n2Q3mPmtWZaXQMvDCqxoBPrcDfFYFo8
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

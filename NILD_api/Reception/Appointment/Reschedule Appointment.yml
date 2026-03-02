@@ -1,0 +1,28 @@
+info:
+  name: Reschedule Appointment
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:5000/api/appointments/APT-2026-00001/reschedule
+  body:
+    type: json
+    data: "{\r
+
+      \  \"newDate\": \"2026-02-22\",\r
+
+      \  \"newTime\": \"14:00\",\r
+
+      \  \"reason\": \"Work conflict\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmVjZXB0aW9uaXN0X3VzZXIiLCJlbWFpbCI6InJlY2VwdGlvbmlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwOCIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo4LCJyb2xlX2NvZGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3NzEyMjk3MzIsImV4cCI6MTc4Njc4MTczMn0.9yUvAlVyLzEOI-tlnouD3y-D3aP45i104JR1vgvknGw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

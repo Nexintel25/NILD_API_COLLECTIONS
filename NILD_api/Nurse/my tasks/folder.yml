@@ -1,0 +1,7 @@
+info:
+  name: my tasks
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

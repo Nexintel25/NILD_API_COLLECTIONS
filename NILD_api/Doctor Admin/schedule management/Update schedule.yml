@@ -1,0 +1,31 @@
+info:
+  name: Update schedule
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:5000/api/doctor-admin/schedule-management/2/update
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer <TOKEN>
+  body:
+    type: json
+    data: |-
+      {
+          "schedule_type": "opd",
+          "slot_duration_minutes": 15,
+          "is_available": true,
+          "notes": "Morning OPD clinic - active"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX2FkbWluX3VzZXIiLCJlbWFpbCI6ImRvY3RvcmFkbWluQGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDA5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjksInJvbGVfY29kZSI6ImRvY3Rvci1hZG1pbiIsImlhdCI6MTc3MTU4MTUwNCwiZXhwIjoxNzg3MTMzNTA0fQ.upplw6XyJDisAvN5XC5SoarRuwVxBn9CMkyqe8cKnd0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

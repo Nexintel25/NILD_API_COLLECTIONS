@@ -1,0 +1,36 @@
+info:
+  name: Create Item
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/store/items
+  body:
+    type: json
+    data: "{\r
+
+      \  \"item_code\": \"ITM-SYRINGE-001\",\r
+
+      \  \"item_name\": \"Disposable Syringe 5ml\",\r
+
+      \  \"category_id\": null,\r
+
+      \  \"description\": \"Sterile, single-use\",\r
+
+      \  \"unit_of_measure\": \"Piece\",\r
+
+      \  \"reorder_level\": 100,\r
+
+      \  \"unit_price\": 12.5\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc3RvcmUiLCJlbWFpbCI6InN0b3JlQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTVE8wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjE4LCJyb2xlX2NvZGUiOiJTVE9SRV9QUk9DVVJFTUVOVCIsImlhdCI6MTc3MjAxMzk4NiwiZXhwIjoxNzg3NTY1OTg2fQ.AH2ubbbTjCT0kScfEvp0P5u82Ybi90XUZOggMcVFGcA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

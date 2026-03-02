@@ -1,0 +1,35 @@
+info:
+  name: Create HR
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5000/api/management/hr/managers
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "username": "hr.new.manager",
+          "email": "hr.new.manager@nild.local",
+          "password": "user1234",
+          "first_name": "Riya",
+          "last_name": "Sharma",
+          "designation": "HR Manager",
+          "department_id": 4,
+          "contact_number": "9876543210"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6Im1hbmFnZW1lbnRfdXNlciIsImVtYWlsIjoibWFuYWdlbWVudEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAxNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxNywicm9sZV9jb2RlIjoibWFuYWdlbWVudCIsImlhdCI6MTc3MTMyMTMwOCwiZXhwIjoxNzg2ODczMzA4fQ.zUVbaQ-QSC0pWhzBmL42yuG-F5MQmwTzgSjaPuVq4xw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

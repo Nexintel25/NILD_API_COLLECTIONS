@@ -1,0 +1,25 @@
+info:
+  name: update Doctor
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/doctor-admin/doctor-directory/DOC0004
+  headers:
+    - name: Authorization
+      value: Bearer <DOCTOR_ADMIN_JWT>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"current_status":"on_leave"}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX2FkbWluX3VzZXIiLCJlbWFpbCI6ImRvY3RvcmFkbWluQGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDA5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjksInJvbGVfY29kZSI6ImRvY3Rvci1hZG1pbiIsImlhdCI6MTc3MTMxMzc5OCwiZXhwIjoxNzg2ODY1Nzk4fQ.2JHQOSrsaPGXfnM3ruR4gwCCwG4aFZ0yL5Iwb6Lm6sY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

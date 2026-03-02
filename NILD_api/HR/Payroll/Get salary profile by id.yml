@@ -1,0 +1,20 @@
+info:
+  name: Get salary profile by id
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://localhost:5000/api/hr/payroll/staff-salary-profiles/3
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImhyX21hbmFnZXIiLCJlbWFpbCI6ImhyLm1hbmFnZXJAZXhhbXBsZS5jb20iLCJlbXBsb3llZV9pZCI6IkVNUC1IUi0wMDEiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MjgsInJvbGVfY29kZSI6IkhSIiwiaWF0IjoxNzcxNDE0NjU4LCJleHAiOjE3ODY5NjY2NTh9.cCL33IlZIdNwQS_Urb962h5JBU8kojiBXtUCOqoifdQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

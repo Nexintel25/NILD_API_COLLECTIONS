@@ -1,0 +1,27 @@
+info:
+  name: Cancel/Update Status of the Medication Order
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/doctor-ipd/data-entry/patients/3/medication-orders/123
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "status": "cancelled",
+        "notes": "Stopped by doctor"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIxNzUyODEsImV4cCI6MTc4NzcyNzI4MX0.ekz4EvNprWQBD5-f72kPNRXd-OBixxgSGbDGSgzuHRo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

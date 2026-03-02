@@ -1,0 +1,7 @@
+info:
+  name: Progress Report
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

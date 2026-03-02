@@ -1,0 +1,42 @@
+info:
+  name: Create vendor
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://nild-api.vercel.app/api/store/vendors
+  body:
+    type: json
+    data: "{\r
+
+      \    \"vendor_code\": \"MSI-001\",\r
+
+      \  \"vendor_name\": \"MediSupply India Pvt Ltd\",\r
+
+      \  \"contact_person\": \"Shayan Kumar\",\r
+
+      \  \"email\": \"ramesh@medisupply.in\",\r
+
+      \  \"phone_primary\": \"9876543210\",\r
+
+      \  \"gst_number\": \"27AABCU9603R1ZX\",\r
+
+      \  \"pan_number\": \"AABCU9603R\",\r
+
+      \  \"payment_terms\": \"net30\",\r
+
+      \  \"department_id\": 1,\r
+
+      \  \"is_active\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc3RvcmUiLCJlbWFpbCI6InN0b3JlQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTVE8wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjE4LCJyb2xlX2NvZGUiOiJTVE9SRV9QUk9DVVJFTUVOVCIsImlhdCI6MTc3MjAxMzk4NiwiZXhwIjoxNzg3NTY1OTg2fQ.AH2ubbbTjCT0kScfEvp0P5u82Ybi90XUZOggMcVFGcA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

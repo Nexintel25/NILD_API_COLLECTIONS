@@ -1,0 +1,35 @@
+info:
+  name: Create Dispatch
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cssd/data-entry/dispatch
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_AUTH_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "receivedDepartmentId": 1,
+          "expectedReturnDate": "2026-03-05T00:00:00.000Z",
+          "receivedByName": "Nurse Sarah",
+          "notes": "Emergency restock",
+          "items": [
+              {
+                  "setId": 1,
+                  "quantity": 2
+              }
+          ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: IPD patient lsit page
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

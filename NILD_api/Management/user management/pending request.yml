@@ -1,0 +1,30 @@
+info:
+  name: pending request
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/management/staff-approvals?page=1&pageSize=10&status=pending
+  headers:
+    - name: Authorization
+      value: Bearer <token>
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+    - name: status
+      value: pending
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9tYW5hZ2VtZW50IiwiZW1haWwiOiJtZ210QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJNQU4wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjIsInJvbGVfY29kZSI6Ik1BTkFHRU1FTlQiLCJpYXQiOjE3NzIwMTU0MjEsImV4cCI6MTc4NzU2NzQyMX0.CfDJTjWETktAzyUqAPosOYW8R--NmgTzY-0D7crb3No
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

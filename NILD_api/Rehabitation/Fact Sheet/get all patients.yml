@@ -1,0 +1,22 @@
+info:
+  name: get all patients
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/rehabilitation/factsheet/rehab-referred-patients
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWhhYiIsImVtYWlsIjoicmVoYWJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IlJFSDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6OCwicm9sZV9jb2RlIjoiUkVIQUJJTElUQVRJT05fU1RBRkYiLCJpYXQiOjE3NzIxMDcyNjcsImV4cCI6MTc4NzY1OTI2N30.5L1oLVGFcofRVGWhzxyFBfOxBWoS71UecvDqDmP8I2s
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWhhYiIsImVtYWlsIjoicmVoYWJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IlJFSDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6OCwicm9sZV9jb2RlIjoiUkVIQUJJTElUQVRJT05fU1RBRkYiLCJpYXQiOjE3NzIxNzgyMTAsImV4cCI6MTc4NzczMDIxMH0.3ab7PJd4C8NOMTIRysO_JfGiZ0xkm3CxvsqXEOz9xBw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

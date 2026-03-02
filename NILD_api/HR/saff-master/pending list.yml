@@ -1,0 +1,30 @@
+info:
+  name: pending list
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/hr/staff-master/requests?page=1&pageSize=10&status=pending
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+    - name: status
+      value: pending
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImhyX21hbmFnZXIiLCJlbWFpbCI6ImhyLm1hbmFnZXJAZXhhbXBsZS5jb20iLCJlbXBsb3llZV9pZCI6IkVNUC1IUi0wMDEiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MjgsInJvbGVfY29kZSI6IkhSIiwiaWF0IjoxNzcxMzE1MzY1LCJleHAiOjE3ODY4NjczNjV9.oEbFadUfrR6KSwgJXtK7SqLd-aj87647jYO58dU1IlU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

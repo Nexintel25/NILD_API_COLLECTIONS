@@ -1,0 +1,7 @@
+info:
+  name: saff-master
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

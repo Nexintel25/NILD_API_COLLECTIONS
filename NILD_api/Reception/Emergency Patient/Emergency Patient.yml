@@ -1,0 +1,72 @@
+info:
+  name: Emergency Patient
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/emergency
+  body:
+    type: json
+    data: "{\r
+
+      \  \"approximateAge\": 30,\r
+
+      \  \"gender\": \"Female\",\r
+
+      \  \"firstName\": \"Tanu\",\r
+
+      \  \"lastName\": \"Roy\",\r
+
+      \  \"mobile_primary\": \"9876543210\",\r
+
+      \  \"isEmergency\": true,\r
+
+      \  \"arrival_mode\": \"ambulance\",\r
+
+      \  \"arrival_time\": \"2026-02-13T14:30:00Z\",\r
+
+      \  \"brought_by_contact\": \"brother\",\r
+
+      \  \"emergency_type\": \"trauma\",\r
+
+      \  \"triage_priority\": 1,\r
+
+      \  \"vitals\": {\r
+
+      \    \"bp\": \"120/80\",\r
+
+      \    \"hr\": 72,\r
+
+      \    \"temp\": 98.6\r
+
+      \  },\r
+
+      \  \"address\": {\r
+
+      \    \"address_line1\": \"45 Station Road\",\r
+
+      \    \"address_line2\": \"Near Kankinara Market\",\r
+
+      \    \"city\": \"Kolkata\",\r
+
+      \    \"state\": \"West Bengal\",\r
+
+      \    \"pincode\": \"700123\",\r
+
+      \    \"country\": \"India\"\r
+
+      \  },\r
+
+      \  \"complaint_notes\": \"Fell from stairs\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfaG91c2VrZWVwaW5nIiwiZW1haWwiOiJob3VzZUBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiSE9VMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxOSwicm9sZV9jb2RlIjoiSE9VU0VLRUVQSU5HIiwiaWF0IjoxNzcyMTc1MzU5LCJleHAiOjE3ODc3MjczNTl9.1JjyaVDdRZ8EOUyT7yY5puIAw9dNmbQtmvwgLoOFxyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

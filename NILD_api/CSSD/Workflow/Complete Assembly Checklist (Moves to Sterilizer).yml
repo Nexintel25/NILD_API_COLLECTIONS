@@ -1,0 +1,46 @@
+info:
+  name: Complete Assembly Checklist (Moves to Sterilizer)
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:3000/api/cssd/workflow/assembly/pack
+  headers:
+    - name: Authorization
+      value: Bearer TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "executionId": "1",
+        "instruments": [
+          {
+            "name": "Mayo Scissors",
+            "expectedQuantity": 1,
+            "actualQuantity": 1,
+            "verified": true
+          },
+          {
+            "name": "Metzenbaum Scissors",
+            "expectedQuantity": 1,
+            "actualQuantity": 1,
+            "verified": true
+          },
+          {
+            "name": "Debakey Forceps",
+            "expectedQuantity": 1,
+            "actualQuantity": 1,
+            "verified": true
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

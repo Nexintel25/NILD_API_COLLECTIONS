@@ -1,0 +1,87 @@
+info:
+  name: Create IPD Admission
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/doctor-ipd/data-entry/admissions
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIwMTY0MTUsImV4cCI6MTc4NzU2ODQxNX0.sAB3UsEsEVAaj6xkY-rMkCcRSm-UmjWxnvovicEvTZM
+  body:
+    type: json
+    data: |-
+      {
+          "patientId": "5",
+          "admissionType": "emergency",
+          "reasonForAdmission": "Acute appendicitis with severe abdominal pain requiring urgent surgical intervention",
+          "dateOfInjury": "2026-02-25T14:00:00.000Z",
+          "priority": "emergency",
+          "vitals": {
+            "temperature": "38.5",
+            "pulse": "105",
+            "bloodPressure": "130/85",
+            "respiratoryRate": "20",
+            "spo2": "97",
+            "weightBMI": "72",
+            "bloodGroup": "O+"
+          },
+          "medicalHistory": {
+            "dm": false,
+            "htn": false,
+            "cad": false,
+            "ckd": false,
+            "tb": false,
+            "asthma": false,
+            "allergies": {
+              "drugs": false,
+              "food": false,
+              "others": false
+            }
+          },
+          "examinationFindings": {
+            "cbc": true,
+            "rbs": true,
+            "lft": true,
+            "urea": true,
+            "urineRoutine": true,
+            "xray": true,
+            "usg": true,
+            "ecg": false
+          },
+          "initialTreatmentPlan": "NPO status, IV fluids, pain management, prepare for appendectomy",
+          "medicines": "IV NS 1L over 8hrs, Inj. Ceftriaxone 1g IV BD, Inj. Metronidazole 500mg IV TDS, Inj. Diclofenac 75mg IM SOS",
+          "riskFlags": {
+            "fallRisk": false,
+            "infectionRisk": true,
+            "pressureSoreRisk": false
+          },
+          "equipment": {
+            "oxygenSupport": false,
+            "ivCannula": true,
+            "ivFluidSet": true,
+            "nebulizer": false,
+            "foleysCatheter": true,
+            "pulseOximeter": true,
+            "saline": true
+          },
+          "admissionOrders": {
+            "rehabilitation": false,
+            "physiotherapist": false,
+            "dietitian": true,
+            "psychiatrist": false,
+            "nursingCare": true
+          }
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIwMTY0MTUsImV4cCI6MTc4NzU2ODQxNX0.sAB3UsEsEVAaj6xkY-rMkCcRSm-UmjWxnvovicEvTZM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

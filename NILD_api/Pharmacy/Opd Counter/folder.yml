@@ -1,0 +1,7 @@
+info:
+  name: Opd Counter
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

@@ -1,0 +1,45 @@
+info:
+  name: Bulk create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/doctor-admin/schedule-management/bulk-create
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer <TOKEN>
+  body:
+    type: json
+    data: |-
+      {
+          "entries": [
+            {
+              "doctor_ref": "DOC-1021",
+              "duty_date": "2026-02-23",
+              "start_time": "2026-02-23T09:00:00.000Z",
+              "end_time": "2026-02-23T11:00:00.000Z",
+              "schedule_type": "opd",
+              "slot_duration_minutes": 20,
+              "department_id": 3
+            },
+            {
+              "doctor_ref": "DOC-00123",
+              "duty_date": "2026-02-23",
+              "start_time": "2026-02-23T12:00:00.000Z",
+              "end_time": "2026-02-23T14:00:00.000Z",
+              "schedule_type": "ipd",
+              "ward_rounds": 2,
+              "department_id": 3
+            }
+          ]
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

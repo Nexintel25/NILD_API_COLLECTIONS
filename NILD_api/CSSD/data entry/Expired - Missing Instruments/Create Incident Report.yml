@@ -1,0 +1,30 @@
+info:
+  name: Create Incident Report
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8080/api/cssd/data-entry/incidents
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_AUTH_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "incidentType": "missing",
+          "departmentId": 1,
+          "setId": 1,
+          "instrumentName": "Mayo Scissors",
+          "notes": "Reported missing after OT 4 surgery"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

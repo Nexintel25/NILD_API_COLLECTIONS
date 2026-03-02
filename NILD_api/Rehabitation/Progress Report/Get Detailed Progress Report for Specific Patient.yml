@@ -1,0 +1,20 @@
+info:
+  name: Get Detailed Progress Report for Specific Patient
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/rehabilitation/progress/patient/NILD-20260225-0001
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWhhYiIsImVtYWlsIjoicmVoYWJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IlJFSDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6OCwicm9sZV9jb2RlIjoiUkVIQUJJTElUQVRJT05fU1RBRkYiLCJpYXQiOjE3NzIyOTg0MzQsImV4cCI6MTc4Nzg1MDQzNH0.8l8VBis9rCzp9aQ2QbCl6PGXFplzGO7Rb9XDSy5zxik
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWhhYiIsImVtYWlsIjoicmVoYWJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IlJFSDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6OCwicm9sZV9jb2RlIjoiUkVIQUJJTElUQVRJT05fU1RBRkYiLCJpYXQiOjE3NzIyOTg0MzQsImV4cCI6MTc4Nzg1MDQzNH0.8l8VBis9rCzp9aQ2QbCl6PGXFplzGO7Rb9XDSy5zxik
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

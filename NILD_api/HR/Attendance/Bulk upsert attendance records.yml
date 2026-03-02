@@ -1,0 +1,23 @@
+info:
+  name: Bulk upsert attendance records
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/attendance/records/bulk-upsert
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_HR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"records":[{"staff_id":12,"attendance_date":"2026-02-20","roster_id":110,"status":"present","source":"system","is_manual":false},{"staff_id":13,"attendance_date":"2026-02-20","roster_id":111,"status":"leave","source":"system","is_manual":false}]}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

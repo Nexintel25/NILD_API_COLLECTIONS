@@ -1,0 +1,39 @@
+info:
+  name: request register
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/staff-master/requests
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "username":"nurse_anu",
+          "email":"anu@nild.com",
+          "password":"user1234",
+          "role_id":7,
+          "facility_id":1,
+          "first_name":"Anu",
+          "last_name":"Saha",
+          "designation":"Nurse",
+          "department_id":3,
+          "contact_number":"9876543210",
+          "photo_url":"https://cdn.example.com/staff/john.jpg",
+          "request_type":"new"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9ociIsImVtYWlsIjoiaHJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IkhSWDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Mywicm9sZV9jb2RlIjoiSFIiLCJpYXQiOjE3NzIxODk5ODIsImV4cCI6MTc4Nzc0MTk4Mn0.zxmvZPM6ma21vGaZEdY_wIvYds_itPAjNuyuWeKpkus
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: GRN (Goods Receipt Notes)
+  type: folder
+  seq: 5
+
+request:
+  auth: inherit

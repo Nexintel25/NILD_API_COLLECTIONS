@@ -1,0 +1,40 @@
+info:
+  name: Create cleaning-tasks
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/housekeeping/cleaning-tasks
+  body:
+    type: json
+    data: "{\r
+
+      \  \"task_category\": \"routine\",\r
+
+      \  \"task_type\": \"Bed Cleaning\",\r
+
+      \  \"ward\": \"Ward A\",\r
+
+      \  \"location\": \"Bed 101\",\r
+
+      \  \"priority\": \"high\",\r
+
+      \  \"assigned_staff\": \"HK Tester\",\r
+
+      \  \"pending_time_minutes\": 15,\r
+
+      \  \"date\": \"2026-02-27\",\r
+
+      \  \"requested_at\": \"2026-02-27T09:00:00.000Z\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfaG91c2VrZWVwaW5nIiwiZW1haWwiOiJob3VzZUBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiSE9VMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxOSwicm9sZV9jb2RlIjoiSE9VU0VLRUVQSU5HIiwiaWF0IjoxNzcyMTc1MzU5LCJleHAiOjE3ODc3MjczNTl9.1JjyaVDdRZ8EOUyT7yY5puIAw9dNmbQtmvwgLoOFxyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: Upsert vendor price list
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:5000/api/store/vendors/1/items
+  body:
+    type: json
+    data: "{\r
+
+      \  \"items\": [\r
+
+      \    { \"item_id\": 4, \"quoted_price\": 150.00, \"lead_time_days\": 3, \"is_preferred\": true, \"is_active\": true },\r
+
+      \    { \"item_id\": 5, \"quoted_price\": 75.50, \"lead_time_days\": 5, \"is_preferred\": false }\r
+
+      \  ]\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc3RvcmUiLCJlbWFpbCI6InN0b3JlQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTVE8wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjE4LCJyb2xlX2NvZGUiOiJTVE9SRV9QUk9DVVJFTUVOVCIsImlhdCI6MTc3MjAxMzk4NiwiZXhwIjoxNzg3NTY1OTg2fQ.AH2ubbbTjCT0kScfEvp0P5u82Ybi90XUZOggMcVFGcA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

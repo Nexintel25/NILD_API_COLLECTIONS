@@ -1,0 +1,7 @@
+info:
+  name: Discharge patient
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

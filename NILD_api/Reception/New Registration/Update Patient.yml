@@ -1,0 +1,44 @@
+info:
+  name: Update Patient
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/patients/NILD-20260223-0001
+  body:
+    type: json
+    data: "{\r
+
+      \    \"firstName\": \"Sayak\",\r
+
+      \    \"lastName\": \"Das\",\r
+
+      \    \"mobileNumber\": \"7866985276\",\r
+
+      \    \"dateOfBirth\": \"1992-03-20\",\r
+
+      \    \"gender\": \"Female\",\r
+
+      \    \"patientType\": \"IPD\",\r
+
+      \    \"department\": \"Rehabilitation\",\r
+
+      \    \"emergencyContactPhone\": \"9876543213\",\r
+
+      \    \"isDivyangjan\": true,\r
+
+      \    \"disabilityType\": \"Locomotor Disability\",\r
+
+      \    \"tenantId\": 1\r
+
+      \  }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWNlcHRpb24iLCJlbWFpbCI6InJlY2VwdGlvbkBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiUkVDMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo5LCJyb2xlX2NvZGUiOiJSRUNFUFRJT05fRlJPTlRfT0ZGSUNFIiwiaWF0IjoxNzcxODMxNTA2LCJleHAiOjE3ODczODM1MDZ9.lYQz5ygreKjE0UWdCXSuoREbfZj0p2FoOM1jDAco7dE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

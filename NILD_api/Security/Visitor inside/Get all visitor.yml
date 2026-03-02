@@ -1,0 +1,20 @@
+info:
+  name: Get all visitor
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/security/visitors
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN_HERE
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

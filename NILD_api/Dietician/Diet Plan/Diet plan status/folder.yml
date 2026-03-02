@@ -1,0 +1,7 @@
+info:
+  name: Diet plan status
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

@@ -1,0 +1,36 @@
+info:
+  name: new visitor entry from
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/security/visitor-entry
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+  body:
+    type: json
+    data: |-
+      {
+        "visitorName": "Tithi Doe",
+        "mobile": "9876543211",
+        "idType": "Aadhaar",
+        "idNumber": "1234-5678-9112",
+        "department": "Cardiology",
+        "purpose": "Patient visit",
+        "gateNumber": "Gate 2",
+        "expectedExitTime": "5:00 PM",
+        "guardName": "Security Guard"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Sample Operations
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

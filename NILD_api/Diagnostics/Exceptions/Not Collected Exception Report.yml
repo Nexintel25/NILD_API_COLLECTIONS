@@ -1,0 +1,17 @@
+info:
+  name: Not Collected Exception Report
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/diagnostics/lab/exceptions/not-collected
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmFkaW9sb2dpc3RfdXNlciIsImVtYWlsIjoicmFkaW9sb2dpc3RAaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMDYiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6Niwicm9sZV9jb2RlIjoicmFkaW9sb2dpc3QiLCJpYXQiOjE3NzEzOTc3OTgsImV4cCI6MTc4Njk0OTc5OH0.Kn6RJbfQk0gmCcZxXCbdKDD65S81_KzyS5q_v7JU-ew
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

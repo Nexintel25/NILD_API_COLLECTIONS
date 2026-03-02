@@ -1,0 +1,22 @@
+info:
+  name: get all deparment
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/doctor-admin/doctor-directory/departments
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+    - name: Content-Type
+      value: application/json
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2NfYWRtaW4iLCJlbWFpbCI6ImRvY2FkbWluQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJET0MwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjQsInJvbGVfY29kZSI6IkRPQ1RPUl9BRE1JTiIsImlhdCI6MTc3MjAxNzM2NywiZXhwIjoxNzg3NTY5MzY3fQ.car5ZIP6W9IutuFW5sYVQ8q3vIbD4M1IEws8jQ25uI0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

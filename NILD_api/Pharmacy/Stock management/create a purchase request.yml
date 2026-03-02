@@ -1,0 +1,58 @@
+info:
+  name: create a purchase request
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/pharmacy/stock/purchase-orders
+  body:
+    type: json
+    data: "{\r
+
+      \  \"supplier_id\": 1,\r
+
+      \  \"po_date\": \"2026-02-19\",\r
+
+      \  \"expected_delivery_date\": \"2026-02-22\",\r
+
+      \  \"items\": [\r
+
+      \    {\r
+
+      \      \"drug_id\": 12,\r
+
+      \      \"drug_name\": \"Amoxicillin 250mg\",\r
+
+      \      \"quantity\": 500,\r
+
+      \      \"unit_price\": 10\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"drug_id\": 11,\r
+
+      \      \"drug_name\": \"Paracetamol 500mg\",\r
+
+      \      \"quantity\": 200,\r
+
+      \      \"unit_price\": 35\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"notes\": \"Monthly pharmacy purchase\"\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX3VzZXIiLCJlbWFpbCI6ImRvY3RvckBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwMSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxLCJyb2xlX2NvZGUiOiJkb2N0b3IiLCJpYXQiOjE3NzEyMjMwOTUsImV4cCI6MTc4Njc3NTA5NX0.m24vi0WruVuGnFkcMa4R2iBLrjFB3lo4fLSytsmNFK0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: Get all Patient details
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/rehabilitation/patients
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN_HERE
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzA5Nzg5NjQsImV4cCI6MTc4NjUzMDk2NH0.h3hIrnhIvMoMwIcz2nPEpeEMfT_i8bWekvRA-aNjd60
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

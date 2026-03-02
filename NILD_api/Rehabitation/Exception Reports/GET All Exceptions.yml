@@ -1,0 +1,20 @@
+info:
+  name: GET All Exceptions
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/rehabilitation/exceptions
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzEzMjE1MjIsImV4cCI6MTc4Njg3MzUyMn0.VVipV4M5k6q0QLf6l65cGWZJ5SnAFJSb6vB5h2d0f5k
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzEzMjE1MjIsImV4cCI6MTc4Njg3MzUyMn0.VVipV4M5k6q0QLf6l65cGWZJ5SnAFJSb6vB5h2d0f5k
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

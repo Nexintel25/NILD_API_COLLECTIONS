@@ -1,0 +1,43 @@
+info:
+  name: Get a Single Appointment
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:5000/api/appointments/APT-2026-00002
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmVjZXB0aW9uaXN0X3VzZXIiLCJlbWFpbCI6InJlY2VwdGlvbmlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwOCIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo4LCJyb2xlX2NvZGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3NzEyMjgwOTksImV4cCI6MTc4Njc4MDA5OX0.vV41jaBmZ30TMk2SKSnUk0lL-8EbPUHboWQyLeuMNJ4
+  body:
+    type: text
+    data: "{\r
+
+      \  \"patient_id\": 1,\r
+
+      \  \"doctor_id\": 1,\r
+
+      \  \"department_id\": 1,\r
+
+      \  \"appointment_date\": \"2026-02-14\",\r
+
+      \  \"slot_start\": \"10:00\",\r
+
+      \  \"slot_end\": \"10:15\",\r
+
+      \  \"appointment_type\": \"OPD_CONSULTATION\",\r
+
+      \  \"reason\": \"Fever and cough\",\r
+
+      \  \"notes\": \"Patient requested early slot\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmVjZXB0aW9uaXN0X3VzZXIiLCJlbWFpbCI6InJlY2VwdGlvbmlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwOCIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo4LCJyb2xlX2NvZGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3NzEyMjk3MzIsImV4cCI6MTc4Njc4MTczMn0.9yUvAlVyLzEOI-tlnouD3y-D3aP45i104JR1vgvknGw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: All items
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/store/items
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc3RvcmUiLCJlbWFpbCI6InN0b3JlQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTVE8wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjE4LCJyb2xlX2NvZGUiOiJTVE9SRV9QUk9DVVJFTUVOVCIsImlhdCI6MTc3MjAxMzk4NiwiZXhwIjoxNzg3NTY1OTg2fQ.AH2ubbbTjCT0kScfEvp0P5u82Ybi90XUZOggMcVFGcA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

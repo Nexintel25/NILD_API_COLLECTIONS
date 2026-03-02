@@ -1,0 +1,36 @@
+info:
+  name: Enter Result for a Test Item
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/diagnostics/lab/items/1/result
+  body:
+    type: json
+    data: "{\r
+
+      \  \"resultValue\": \"Negative\",\r
+
+      \  \"unit\": null,\r
+
+      \  \"referenceRange\": \"Negative\",\r
+
+      \  \"opinion\": \"No abnormalities detected\",\r
+
+      \  \"remarks\": \"Sample slightly lipemic but acceptable\",\r
+
+      \  \"enteredBy\": \"tech_456\",\r
+
+      \  \"status\": \"completed\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmFkaW9sb2dpc3RfdXNlciIsImVtYWlsIjoicmFkaW9sb2dpc3RAaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMDYiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6Niwicm9sZV9jb2RlIjoicmFkaW9sb2dpc3QiLCJpYXQiOjE3NzEzOTc3OTgsImV4cCI6MTc4Njk0OTc5OH0.Kn6RJbfQk0gmCcZxXCbdKDD65S81_KzyS5q_v7JU-ew
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

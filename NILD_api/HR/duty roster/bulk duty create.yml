@@ -1,0 +1,23 @@
+info:
+  name: bulk duty create
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/duty-roster/bulk-create
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"entries":[{"staff_id":41,"duty_date":"2026-02-19","start_time":"2026-02-19T09:00:00.000Z","end_time":"2026-02-19T17:00:00.000Z"},{"staff_id":42,"duty_date":"2026-02-19","start_time":"2026-02-19T10:00:00.000Z","end_time":"2026-02-19T18:00:00.000Z"}]}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,34 @@
+info:
+  name: create a soiled pickup
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/laundry/soiled-linen-pickups
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tenantId\": 1,\r
+
+      \  \"wardid\": 2,\r
+
+      \  \"departmentid\": 3,\r
+
+      \  \"linenTypeId\": 4,\r
+
+      \  \"expectedWeight\": 12.5,\r
+
+      \  \"bagCount\": 3\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIxNzk5NTksImV4cCI6MTc4NzczMTk1OX0.GcTld-pcyhkz79kT8JnHbouPFFBhhGuvPOStNICsj4c
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

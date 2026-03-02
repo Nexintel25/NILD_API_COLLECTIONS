@@ -1,0 +1,28 @@
+info:
+  name: Register Staff (with Auto-Generated Employee ID)
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/register
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "tenant_id": 1,
+          "username": "dr.Rami",
+          "email": "rami@nild.com",
+          "password": "dr@12345",
+          "role_id": 1
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

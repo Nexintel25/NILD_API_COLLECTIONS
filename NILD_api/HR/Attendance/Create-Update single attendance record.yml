@@ -1,0 +1,25 @@
+info:
+  name: Create/Update single attendance record
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/attendance/records
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_HR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"staff_id":7,"attendance_date":"2026-02-19","roster_id":1,"status":"present","check_in_time":"2026-02-19T09:05:00.000Z","check_out_time":"2026-02-19T17:45:00.000Z","late_minutes":5,"overtime_minutes":15,"source":"manual","is_manual":true,"remarks":"Manual regularization"}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImhyX21hbmFnZXIiLCJlbWFpbCI6ImhyLm1hbmFnZXJAZXhhbXBsZS5jb20iLCJlbXBsb3llZV9pZCI6IkVNUC1IUi0wMDEiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MjgsInJvbGVfY29kZSI6IkhSIiwiaWF0IjoxNzcxNDE0NjU4LCJleHAiOjE3ODY5NjY2NTh9.cCL33IlZIdNwQS_Urb962h5JBU8kojiBXtUCOqoifdQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

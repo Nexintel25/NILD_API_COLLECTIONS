@@ -1,0 +1,32 @@
+info:
+  name: Device  edit api
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/rehabilitation/entry/4
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzA5Nzg5NjQsImV4cCI6MTc4NjUzMDk2NH0.h3hIrnhIvMoMwIcz2nPEpeEMfT_i8bWekvRA-aNjd60
+  body:
+    type: json
+    data: |-
+      {
+          "deviceType": "Walker",
+          "side": "Bilateral",
+          "fittingDetails": "Standard walker with wheels. Height adjusted to patient comfort. Patient able to ambulate 50 feet with device.",
+          "prescribed": "2023-10-20",
+          "status": "In Progress"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzA5Nzg5NjQsImV4cCI6MTc4NjUzMDk2NH0.h3hIrnhIvMoMwIcz2nPEpeEMfT_i8bWekvRA-aNjd60
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,25 @@
+info:
+  name: New Request
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/login
+  body:
+    type: json
+    data: "{\r
+
+      \    \"tenant_id\": 1,\r
+
+      \    \"identifier\": \"dietician_user\",\r
+
+      \    \"password\": \"Admin@123\"\r
+
+      \  }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

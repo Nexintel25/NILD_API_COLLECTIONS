@@ -1,0 +1,23 @@
+info:
+  name: Auto-mark attendance for a date (roster + approved leave + holiday)
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5000/api/hr/attendance/records/auto-mark-date
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_HR_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"date":"2026-02-21"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

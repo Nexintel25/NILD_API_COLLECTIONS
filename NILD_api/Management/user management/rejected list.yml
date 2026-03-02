@@ -1,0 +1,27 @@
+info:
+  name: rejected list
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/management/staff-approvals/recent?status=rejected&limit=10
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+  params:
+    - name: status
+      value: rejected
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX2FkbWluX3VzZXIiLCJlbWFpbCI6ImRvY3RvcmFkbWluQGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDA5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjksInJvbGVfY29kZSI6ImRvY3Rvci1hZG1pbiIsImlhdCI6MTc3MTI0MjA0NiwiZXhwIjoxNzg2Nzk0MDQ2fQ.30d1W9KFdp6NJAvKGtx3fIzybRddW9mWOl0A9xmewws
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

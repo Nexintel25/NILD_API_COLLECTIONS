@@ -1,0 +1,46 @@
+info:
+  name: Create Indent
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/store/indents
+  body:
+    type: json
+    data: "{\r
+
+      \  \"department_id\": 3,\r
+
+      \  \"required_by\": \"2026-03-01\",\r
+
+      \  \"priority\": \"urgent\",\r
+
+      \  \"remarks\": \"ICU stock low\",\r
+
+      \  \"items\": [\r
+
+      \    {\r
+
+      \      \"item_id\": 5,\r
+
+      \      \"item_name\": \"Surgical Gloves (Box)\",\r
+
+      \      \"quantity\": 5,\r
+
+      \      \"unit\": \"Box\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc3RvcmUiLCJlbWFpbCI6InN0b3JlQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTVE8wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjE4LCJyb2xlX2NvZGUiOiJTVE9SRV9QUk9DVVJFTUVOVCIsImlhdCI6MTc3MjAxMzk4NiwiZXhwIjoxNzg3NTY1OTg2fQ.AH2ubbbTjCT0kScfEvp0P5u82Ybi90XUZOggMcVFGcA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

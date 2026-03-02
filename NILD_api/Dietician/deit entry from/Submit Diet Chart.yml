@@ -1,0 +1,53 @@
+info:
+  name: Submit Diet Chart
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/dietician/diet-charts
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN_HERE
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "patientId": "NILD-20260213-0003",
+          "patientName": "Sayak",
+          "anthropometrics": {
+            "age": 30,
+            "gender": "Male",
+            "height": 175,
+            "weight": 70,
+            "mobility": "Ambulatory"
+          },
+          "labResults": {
+            "glucose": 95,
+            "hba1c": 5.4
+          },
+          "prescription": {
+            "dietType": "Regular",
+            "calories": 2000,
+            "protein": 80
+          },
+          "schedule": {
+            "breakfast": "08:00",
+            "lunch": "13:00",
+            "dinner": "20:00"
+          },
+          "notes": "Emergency patient - Trauma case. Monitor nutrition intake.",
+          "tenantId": "1",
+          "createdBy": "1"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

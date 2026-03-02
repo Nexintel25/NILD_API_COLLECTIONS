@@ -1,0 +1,100 @@
+info:
+  name: Register New Patient
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/patients
+  body:
+    type: json
+    data: "{\r
+
+      \  \"firstName\": \"Ria\",\r
+
+      \  \"middle_name\": \"Roy\",\r
+
+      \  \"last_name\": \"Sharma\",\r
+
+      \  \"department\": \"Rehabilitation\",\r
+
+      \  \"dateOfBirth\": \"1998-07-15\",\r
+
+      \  \"gender\": \"Female\",\r
+
+      \  \"blood_group\": \"B+\",\r
+
+      \  \"mobileNumber\": \"4236534123\",\r
+
+      \  \"mobile_secondary\": null,\r
+
+      \  \"email\": \"ria@example.com\",\r
+
+      \  \"aadhaar_number\": \"123456789012\",\r
+
+      \  \"address_line1\": \"12, MG Road\",\r
+
+      \  \"address_line2\": \"Annanagar\",\r
+
+      \  \"city\": \"Chennai\",\r
+
+      \  \"state\": \"Dalhi\",\r
+
+      \  \"pincode\": \"600001\",\r
+
+      \  \"patientType\": \"OPD\",\r
+
+      \  \"emergency_contact_name\": \"Ravi Kumar\",\r
+
+      \  \"emergencyContactPhone\": \"9876543210\",\r
+
+      \  \"emergency_contact_relation\": \"Father\",\r
+
+      \  \"photo_url\": null,\r
+
+      \  \"is_divyangjan\": false,\r
+
+      \  \"registration_date\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \  \"created_at\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \  \"updated_at\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \  \"opd_visit\": {\r
+
+      \    \"visit_id\": \"15\",\r
+
+      \    \"visit_number\": \"VIS-20260227-0003\",\r
+
+      \    \"visit_date\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \    \"visit_time\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \    \"visit_type\": \"new\",\r
+
+      \    \"status\": \"waiting\",\r
+
+      \    \"department_id\": null,\r
+
+      \    \"doctor_id\": null,\r
+
+      \    \"reason_for_visit\": null,\r
+
+      \    \"referral_source\": null,\r
+
+      \    \"checked_in_at\": \"2026-02-27T10:13:08.607Z\",\r
+
+      \    \"created_at\": \"2026-02-27T10:13:08.607Z\"\r
+
+      \  }\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWNlcHRpb24iLCJlbWFpbCI6InJlY2VwdGlvbkBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiUkVDMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo5LCJyb2xlX2NvZGUiOiJSRUNFUFRJT05fRlJPTlRfT0ZGSUNFIiwiaWF0IjoxNzcxODMxNTA2LCJleHAiOjE3ODczODM1MDZ9.lYQz5ygreKjE0UWdCXSuoREbfZj0p2FoOM1jDAco7dE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

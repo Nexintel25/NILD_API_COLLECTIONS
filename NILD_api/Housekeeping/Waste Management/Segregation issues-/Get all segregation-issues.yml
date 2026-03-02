@@ -1,0 +1,32 @@
+info:
+  name: Get all segregation-issues
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/housekeeping/waste-management/segregation-issues
+  body:
+    type: text
+    data: "{\r
+
+      \  \"ward\": \"Ward A\",\r
+
+      \  \"waste_type\": \"Bio-Medical (Yellow)\",\r
+
+      \  \"quantity_kg\": 5,\r
+
+      \  \"priority\": \"high\",\r
+
+      \  \"assigned_to\": \"HK Tester\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfaG91c2VrZWVwaW5nIiwiZW1haWwiOiJob3VzZUBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiSE9VMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxOSwicm9sZV9jb2RlIjoiSE9VU0VLRUVQSU5HIiwiaWF0IjoxNzcyMTc1MzU5LCJleHAiOjE3ODc3MjczNTl9.1JjyaVDdRZ8EOUyT7yY5puIAw9dNmbQtmvwgLoOFxyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

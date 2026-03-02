@@ -1,0 +1,27 @@
+info:
+  name: Cancel Appointment
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5000/api/appointments/APT-2026-00001/cancel
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmVjZXB0aW9uaXN0X3VzZXIiLCJlbWFpbCI6InJlY2VwdGlvbmlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwOCIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo4LCJyb2xlX2NvZGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3NzEyMjgwOTksImV4cCI6MTc4Njc4MDA5OX0.vV41jaBmZ30TMk2SKSnUk0lL-8EbPUHboWQyLeuMNJ4
+  body:
+    type: json
+    data: "{\r
+
+      \  \"cancellationReason\": \"Patient requested cancellation due to scheduling conflict\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoicmVjZXB0aW9uaXN0X3VzZXIiLCJlbWFpbCI6InJlY2VwdGlvbmlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwOCIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo4LCJyb2xlX2NvZGUiOiJyZWNlcHRpb25pc3QiLCJpYXQiOjE3NzEyMjk3MzIsImV4cCI6MTc4Njc4MTczMn0.9yUvAlVyLzEOI-tlnouD3y-D3aP45i104JR1vgvknGw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

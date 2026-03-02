@@ -1,0 +1,144 @@
+info:
+  name: Reception login
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/login
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tenant_id\": 1,\r
+
+      \  \"identifier\": \"receptionist_user\",\r
+
+      \  \"password\": \"your_password_here\",\r
+
+      \r
+
+      \  \"patientId\": \"P-2025-00123\",\r
+
+      \  \"patientName\": \"John Doe\",\r
+
+      \  \"dateOfBirth\": \"1985-04-12\",\r
+
+      \  \"gender\": \"Male\",\r
+
+      \  \"visitId\": \"V-2025-00045\",\r
+
+      \  \"orderId\": \"ORD-20250216-001\",\r
+
+      \  \"labReport\": {\r
+
+      \    \"reportId\": \"LAB-REP-0001\",\r
+
+      \    \"reportDate\": \"2025-02-16T10:30:00Z\",\r
+
+      \    \"department\": \"Hematology\",\r
+
+      \    \"tests\": [\r
+
+      \      {\r
+
+      \        \"testCode\": \"CBC\",\r
+
+      \        \"testName\": \"Complete Blood Count\",\r
+
+      \        \"result\": \"Normal\",\r
+
+      \        \"resultValue\": null,\r
+
+      \        \"unit\": null,\r
+
+      \        \"referenceRange\": \"See parameters\",\r
+
+      \        \"status\": \"Completed\",\r
+
+      \        \"parameters\": [\r
+
+      \          {\r
+
+      \            \"parameterName\": \"Hemoglobin\",\r
+
+      \            \"value\": 13.8,\r
+
+      \            \"unit\": \"g/dL\",\r
+
+      \            \"referenceRange\": \"13.0–17.0\",\r
+
+      \            \"flag\": \"N\"\r
+
+      \          },\r
+
+      \          {\r
+
+      \            \"parameterName\": \"WBC\",\r
+
+      \            \"value\": 7.2,\r
+
+      \            \"unit\": \"x10^9/L\",\r
+
+      \            \"referenceRange\": \"4.0–11.0\",\r
+
+      \            \"flag\": \"N\"\r
+
+      \          },\r
+
+      \          {\r
+
+      \            \"parameterName\": \"Platelets\",\r
+
+      \            \"value\": 250,\r
+
+      \            \"unit\": \"x10^9/L\",\r
+
+      \            \"referenceRange\": \"150–400\",\r
+
+      \            \"flag\": \"N\"\r
+
+      \          }\r
+
+      \        ]\r
+
+      \      },\r
+
+      \      {\r
+
+      \        \"testCode\": \"FBS\",\r
+
+      \        \"testName\": \"Fasting Blood Sugar\",\r
+
+      \        \"result\": 92,\r
+
+      \        \"unit\": \"mg/dL\",\r
+
+      \        \"referenceRange\": \"70–100\",\r
+
+      \        \"status\": \"Completed\",\r
+
+      \        \"flag\": \"N\"\r
+
+      \      }\r
+
+      \    ],\r
+
+      \    \"performedBy\": \"Dr. Alice Smith\",\r
+
+      \    \"verifiedBy\": \"Dr. Bob Johnson\",\r
+
+      \    \"comments\": \"All parameters within normal range.\",\r
+
+      \    \"status\": \"Final\"\r
+
+      \  }\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

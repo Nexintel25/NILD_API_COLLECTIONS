@@ -1,0 +1,37 @@
+info:
+  name: Add Tray (The "Create Tray Dialog")
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3000/api/cssd/workflow/assembly/ad-hoc
+  headers:
+    - name: Authorization
+      value: Bearer TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "name": "General Surgery Set",
+        "setNumber": "SET-001",
+        "type": "General",
+        "department": "Main OT",
+        "itemsCount": "12",
+        "sterilizationTemp": "134.2",
+        "pressure": "2.15",
+        "timeDuration": "45 mins",
+        "machineNumber": "AC-01",
+        "priority": "Normal",
+        "notes": "Handle with care",
+        "instruments": ["Mayo Scissors", "Metzenbaum Scissors", "Debakey Forceps"]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

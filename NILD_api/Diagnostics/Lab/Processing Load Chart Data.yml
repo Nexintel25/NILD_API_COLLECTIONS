@@ -1,0 +1,17 @@
+info:
+  name: Processing Load Chart Data
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: http://localhost:5000/api/diagnostics/lab/charts/processing
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoibGFiX3RlY2hfdXNlciIsImVtYWlsIjoibGFidGVjaEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJsYWJfdGVjaCIsImlhdCI6MTc3MTMxMTcyOSwiZXhwIjoxNzg2ODYzNzI5fQ.JhrL_1Uq4pMvM0s3USCYurTJTJObB_HeJrBlEthCaSE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

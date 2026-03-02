@@ -1,0 +1,26 @@
+info:
+  name: login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/login
+  body:
+    type: json
+    data: "{\r
+
+      \    \"tenant_id\": 1,\r
+
+      \    \"identifier\": \"user_rehab\",\r
+
+      \    \"password\": \"Admin@123\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

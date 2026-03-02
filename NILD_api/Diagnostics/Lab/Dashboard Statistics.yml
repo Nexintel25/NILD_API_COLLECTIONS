@@ -1,0 +1,17 @@
+info:
+  name: Dashboard Statistics
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/diagnostics/lab/stats
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoibGFiX3RlY2hfdXNlciIsImVtYWlsIjoibGFidGVjaEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJsYWJfdGVjaCIsImlhdCI6MTc3MTMyMzE5NSwiZXhwIjoxNzg2ODc1MTk1fQ.yc6KNY9OShfuQXkIefxqw2JTwX7O1kYdv0P8tM6ArM0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,31 @@
+info:
+  name: Creates a new vehicle parking entry
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:5000/api/security/parking-logs/entry
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "vehicleNumber": "WB-01-AB-1234",
+          "vehicleType": "Car",
+          "driverName": "John Doe",
+          "parkingSlot": "A-12"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: reject request
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/management/staff-approvals/1/reject
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: '{"request_notes":"Missing license document"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

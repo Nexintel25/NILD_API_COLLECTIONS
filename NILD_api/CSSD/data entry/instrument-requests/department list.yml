@@ -1,0 +1,20 @@
+info:
+  name: department list
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/cssd/data-entry/instrument-requests/departments
+  headers:
+    - name: Authorization
+      value: Bearer <token>
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfY3NzZCIsImVtYWlsIjoiY3NzZEBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiU1RFMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxNCwicm9sZV9jb2RlIjoiU1RFUklMRV9TRVJWSUNFX0NTU0QiLCJpYXQiOjE3NzIxODY5MDgsImV4cCI6MTc4NzczODkwOH0.Fb1PAr_0XNA3ebY1amnrwJYoSsoP5_f330BiMo6LdEY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

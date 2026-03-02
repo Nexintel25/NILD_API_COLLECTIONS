@@ -1,0 +1,30 @@
+info:
+  name: Doctor Table
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/doctor-admin/doctor-directory?page=1&pageSize=10&status=active
+  headers:
+    - name: Authorization
+      value: Bearer <DOCTOR_ADMIN_JWT>
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+    - name: status
+      value: active
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX2FkbWluX3VzZXIiLCJlbWFpbCI6ImRvY3RvcmFkbWluQGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDA5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjksInJvbGVfY29kZSI6ImRvY3Rvci1hZG1pbiIsImlhdCI6MTc3MTU4MTUwNCwiZXhwIjoxNzg3MTMzNTA0fQ.upplw6XyJDisAvN5XC5SoarRuwVxBn9CMkyqe8cKnd0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

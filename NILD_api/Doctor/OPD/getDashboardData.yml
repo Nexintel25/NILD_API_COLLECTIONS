@@ -1,0 +1,17 @@
+info:
+  name: getDashboardData
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:5000/api/doctor-opd/opd-dashboard
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX3VzZXIiLCJlbWFpbCI6ImRvY3RvckBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwMSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxLCJyb2xlX2NvZGUiOiJkb2N0b3IiLCJpYXQiOjE3NzA5Nzk2OTcsImV4cCI6MTc4NjUzMTY5N30.KibRZ-rwCTfagQD4P3hiEGKxdG2ApZB_V1Pl1CyDBVU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

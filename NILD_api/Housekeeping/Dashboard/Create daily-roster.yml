@@ -1,0 +1,36 @@
+info:
+  name: Create daily-roster
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/housekeeping/dashboard/daily-roster
+  body:
+    type: json
+    data: "{\r
+
+      \  \"staff_name\": \"HK Tester\",\r
+
+      \  \"shift\": \"morning\",\r
+
+      \  \"date\": \"2026-02-27\",\r
+
+      \  \"work_area\": \"Ward A\",\r
+
+      \  \"shift_start\": \"2026-02-27T08:00:00.000Z\",\r
+
+      \  \"shift_end\": \"2026-02-27T16:00:00.000Z\",\r
+
+      \  \"logged_in\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfaG91c2VrZWVwaW5nIiwiZW1haWwiOiJob3VzZUBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiSE9VMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxOSwicm9sZV9jb2RlIjoiSE9VU0VLRUVQSU5HIiwiaWF0IjoxNzcyMTc1MzU5LCJleHAiOjE3ODc3MjczNTl9.1JjyaVDdRZ8EOUyT7yY5puIAw9dNmbQtmvwgLoOFxyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: Single Doctor details
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/doctor-admin/doctor-directory/DOC0004
+  headers:
+    - name: Authorization
+      value: Bearer <DOCTOR_ADMIN_JWT>
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX2FkbWluX3VzZXIiLCJlbWFpbCI6ImRvY3RvcmFkbWluQGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDA5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjksInJvbGVfY29kZSI6ImRvY3Rvci1hZG1pbiIsImlhdCI6MTc3MTMxMDcwNiwiZXhwIjoxNzg2ODYyNzA2fQ.Woh5IBAMs1PVIzVqY4w148BbOzcEUyAoMlySUn06Wes
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

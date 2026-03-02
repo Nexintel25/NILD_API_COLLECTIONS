@@ -1,0 +1,24 @@
+info:
+  name: approved list
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:5000/api/management/staff-approvals/recent?status=approved&limit=10
+  params:
+    - name: status
+      value: approved
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6Im1hbmFnZW1lbnRfdXNlciIsImVtYWlsIjoibWFuYWdlbWVudEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAxNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxNywicm9sZV9jb2RlIjoibWFuYWdlbWVudCIsImlhdCI6MTc3MTI1ODk1MSwiZXhwIjoxNzg2ODEwOTUxfQ.F0Ih3pVBqI05FD1LnahuLYB-Bw0JkSHIDs3TJhisVTA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

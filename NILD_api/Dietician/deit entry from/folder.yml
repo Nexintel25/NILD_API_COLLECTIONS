@@ -1,0 +1,7 @@
+info:
+  name: deit entry from
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

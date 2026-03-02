@@ -1,0 +1,19 @@
+info:
+  name: verify
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/housekeeping/bed-cleaning/:id/verify
+  params:
+    - name: id
+      value: "2"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

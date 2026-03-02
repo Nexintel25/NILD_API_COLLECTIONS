@@ -1,0 +1,17 @@
+info:
+  name: get all available drivers
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://localhost:5000/api/ambulance/calls/available-drivers
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX3VzZXIiLCJlbWFpbCI6ImRvY3RvckBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwMSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxLCJyb2xlX2NvZGUiOiJkb2N0b3IiLCJpYXQiOjE3NzEyMjMwOTUsImV4cCI6MTc4Njc3NTA5NX0.m24vi0WruVuGnFkcMa4R2iBLrjFB3lo4fLSytsmNFK0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

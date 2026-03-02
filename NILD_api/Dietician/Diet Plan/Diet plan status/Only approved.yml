@@ -1,0 +1,30 @@
+info:
+  name: Only approved
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/dietician/diet-plans?page=1&limit=10&status=approved
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: status
+      value: approved
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

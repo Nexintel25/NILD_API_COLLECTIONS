@@ -1,0 +1,32 @@
+info:
+  name: opd-department-registration
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/management/opd-departments
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+  body:
+    type: json
+    data: |-
+      {
+          "department_name": "Neurology",
+          "department_code": "NURO1",
+          "department_type": "Clinical",
+          "head_of_department": 1,
+          "contact_number": "9609225287"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNywidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6Im1hbmFnZW1lbnRfdXNlciIsImVtYWlsIjoibWFuYWdlbWVudEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAxNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxNywicm9sZV9jb2RlIjoibWFuYWdlbWVudCIsImlhdCI6MTc3MDk3NzM2NCwiZXhwIjoxNzg2NTI5MzY0fQ.Am471_F3kxSdN8es-Tmx7EZUOb5JN5vPd9vmo9Utrr4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

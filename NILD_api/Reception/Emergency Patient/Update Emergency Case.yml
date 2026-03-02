@@ -1,0 +1,98 @@
+info:
+  name: Update Emergency Case
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/emergency/NILD-20260213-0003
+  body:
+    type: json
+    data: "{\r
+
+      \    \"patient_id\": \"10\",\r
+
+      \    \"upid\": \"NILD-20260213-0003\",\r
+
+      \    \"emergency_case_number\": \"ER-20260213-0002\",\r
+
+      \    \"first_name\": \"Sayak\",\r
+
+      \    \"date_of_birth\": \"1995-12-31T00:00:00.000Z\",\r
+
+      \    \"gender\": \"male\",\r
+
+      \    \"mobile_primary\": \"7866986534\",\r
+
+      \    \"is_emergency\": true,\r
+
+      \    \"is_unknown_patient\": false,\r
+
+      \    \"triage_priority\": \"Critical\",\r
+
+      \    \"emergency_type\": \"Trauma\",\r
+
+      \    \"arrival_mode\": \"Ambulance\",\r
+
+      \    \"arrival_time\": \"2026-02-13T08:25:24.279Z\",\r
+
+      \    \"brought_by_contact\": \"\",\r
+
+      \    \"vitals\": {},\r
+
+      \    \"complaint_notes\": \"\",\r
+
+      \    \"patient_disabilities\": [],\r
+
+      \    \"patient_allergies\": [],\r
+
+      \    \"tenant_id\": \"1\",\r
+
+      \    \"facility_id\": null,\r
+
+      \    \"middle_name\": null,\r
+
+      \    \"last_name\": null,\r
+
+      \    \"blood_group\": null,\r
+
+      \    \"mobile_secondary\": null,\r
+
+      \    \"email\": null,\r
+
+      \    \"aadhaar_number\": null,\r
+
+      \    \"address_line1\": null,\r
+
+      \    \"address_line2\": null,\r
+
+      \    \"city\": null,\r
+
+      \    \"state\": null,\r
+
+      \    \"pincode\": null,\r
+
+      \    \"emergency_contact_name\": null,\r
+
+      \    \"emergency_contact_phone\": null,\r
+
+      \    \"emergency_contact_relation\": null,\r
+
+      \    \"photo_url\": null,\r
+
+      \    \"is_divyangjan\": false,\r
+
+      \    \"registration_date\": \"2026-02-13T08:25:24.279Z\",\r
+
+      \    \"created_at\": \"2026-02-13T08:25:24.373Z\",\r
+
+      \    \"updated_at\": \"2026-02-13T08:25:24.373Z\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,37 @@
+info:
+  name: Update PT Goals
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/rehabilitation/rehab/6
+  headers:
+    - name: Authorization
+      value: Bearer <TOKEN>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "current_session": 6,
+          "goal_scores": {
+            "Range of Motion": 80,
+            "Muscle Strength": 70,
+            "Balance": 75,
+            "Weight Bearing": 85,
+            "Pain Management": 90
+          },
+          "calculated_status": "Improving",
+          "next_checkup_date": "2023-11-15"
+        }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzA5Nzg5NjQsImV4cCI6MTc4NjUzMDk2NH0.h3hIrnhIvMoMwIcz2nPEpeEMfT_i8bWekvRA-aNjd60
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

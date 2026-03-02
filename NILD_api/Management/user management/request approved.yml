@@ -1,0 +1,20 @@
+info:
+  name: request approved
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/management/staff-approvals/23/approve
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9tYW5hZ2VtZW50IiwiZW1haWwiOiJtZ210QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJNQU4wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjIsInJvbGVfY29kZSI6Ik1BTkFHRU1FTlQiLCJpYXQiOjE3NzIwMTU0MjEsImV4cCI6MTc4NzU2NzQyMX0.CfDJTjWETktAzyUqAPosOYW8R--NmgTzY-0D7crb3No
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: PATCH Checkout Vendor
+  type: http
+  seq: 2
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/security/vendor-logs/checkout/VPASS-2026-00013
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InNlY3VyaXR5X3VzZXIiLCJlbWFpbCI6InNlY3VyaXR5QGhvc3BpdGFsLmNvbSIsImVtcGxveWVlX2lkIjoiRU1QMDE5IiwiZmFjaWxpdHlfaWQiOm51bGwsInJvbGVfaWQiOjE5LCJyb2xlX2NvZGUiOiJzZWN1cml0eSIsImlhdCI6MTc3MTU3MDM3MCwiZXhwIjoxNzg3MTIyMzcwfQ.LX4TJLsWZFuJfrDL2f6WL4rCK-XoeZFSO3IPBuxKP-4
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

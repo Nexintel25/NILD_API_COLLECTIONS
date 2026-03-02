@@ -1,0 +1,20 @@
+info:
+  name: Create a Lab Test
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: http://localhost:5000/api/diagnostics/lab/tests
+  body:
+    type: json
+    data: '{"testName":"Basic Metabolic Panel","testCode":"BMP001","category":"Chemistry","sampleType":"Blood","price":50,"turnaroundHours":12,"preTestInstructions":"No special preparation required","active":true}'
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoibGFiX3RlY2hfdXNlciIsImVtYWlsIjoibGFidGVjaEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJsYWJfdGVjaCIsImlhdCI6MTc3MTMxMTcyOSwiZXhwIjoxNzg2ODYzNzI5fQ.JhrL_1Uq4pMvM0s3USCYurTJTJObB_HeJrBlEthCaSE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

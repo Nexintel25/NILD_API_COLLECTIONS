@@ -1,0 +1,18 @@
+info:
+  name: Delete schedule
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:5000/doctor-admin/schedule-management/12
+  headers:
+    - name: Authorization
+      value: Bearer <JWT_TOKEN>
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

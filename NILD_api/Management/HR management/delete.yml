@@ -1,0 +1,18 @@
+info:
+  name: delete
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/management/hr/managers/45
+  headers:
+    - name: Authorization
+      value: Bearer $TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

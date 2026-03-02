@@ -1,0 +1,46 @@
+info:
+  name: Update daily-roster
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/housekeeping/dashboard/daily-roster/6/update
+  body:
+    type: json
+    data: "{\r
+
+      \  \"roster_id\": \"6\",\r
+
+      \  \"tenant_id\": \"1\",\r
+
+      \  \"staff_name\": \"HK Tester\",\r
+
+      \  \"staff_id\": null,\r
+
+      \  \"shift\": \"night\",\r
+
+      \  \"date\": \"2026-02-26\",\r
+
+      \  \"shift_start\": \"2026-02-27T08:00:00.000Z\",\r
+
+      \  \"shift_end\": \"2026-02-27T16:00:00.000Z\",\r
+
+      \  \"work_area\": \"Ward A\",\r
+
+      \  \"logged_in\": true,\r
+
+      \  \"created_at\": \"2026-02-27T01:28:16.487Z\",\r
+
+      \  \"updated_at\": \"2026-02-27T01:28:16.487Z\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfaG91c2VrZWVwaW5nIiwiZW1haWwiOiJob3VzZUBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiSE9VMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxOSwicm9sZV9jb2RlIjoiSE9VU0VLRUVQSU5HIiwiaWF0IjoxNzcyMTc1MzU5LCJleHAiOjE3ODc3MjczNTl9.1JjyaVDdRZ8EOUyT7yY5puIAw9dNmbQtmvwgLoOFxyI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
