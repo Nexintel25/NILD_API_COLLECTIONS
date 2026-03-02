@@ -1,0 +1,12 @@
+opencollection: 1.0.0
+info:
+  name: "My Workspace"
+  type: workspace
+
+collections:
+  - name: "NILD_API"
+    path: "C:/Users/suman/SVU_NI/NILD_APIS/NILD_API_COLLECTIONS"
+
+specs:
+
+docs: ''
