@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/doctor-ipd/data-entry/patients/3/medication-orders
+  url: http://localhost:5000/api/doctor-ipd/data-entry/patients/5/medication-orders
   headers:
     - name: Content-Type
       value: application/json
@@ -13,27 +13,36 @@ http:
     type: json
     data: |-
       {
-        "priority": "normal",
+        "priority": "urgent",
         "status": "pending",
-        "notes": "IPD medication order",
+        "notes": "Pre-op IPD medication order - administer 8 AM antibiotic doses concurrently",
         "medication_items": [
           {
-            "drug_name": "Paracetamol",
-            "strength": "500mg",
-            "route": "oral",
+            "drug_name": "Ceftriaxone",
+            "strength": "1g",
+            "route": "IV",
             "frequency": "BD",
-            "duration": "5 days",
-            "quantity": 10,
-            "instructions": "After food"
+            "duration": "3 days",
+            "quantity": 6,
+            "instructions": "Administer at 8 AM and 8 PM"
           },
           {
-            "drug_name": "Pantoprazole",
-            "strength": "40mg",
-            "route": "oral",
-            "frequency": "OD",
-            "duration": "5 days",
-            "quantity": 5,
-            "instructions": "Before breakfast"
+            "drug_name": "Metronidazole",
+            "strength": "500mg",
+            "route": "IV",
+            "frequency": "TDS",
+            "duration": "3 days",
+            "quantity": 9,
+            "instructions": "Administer at 8 AM, 2 PM, and 8 PM"
+          },
+          {
+            "drug_name": "Diclofenac",
+            "strength": "75mg",
+            "route": "IM",
+            "frequency": "SOS",
+            "duration": "3 days",
+            "quantity": 3,
+            "instructions": "Administer for severe abdominal pain only"
           }
         ]
       }
