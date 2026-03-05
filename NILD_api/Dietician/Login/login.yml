@@ -14,7 +14,7 @@ http:
     data: |-
       {
           "tenant_id": 1,
-          "identifier": "dietician_user",
+          "identifier": "user_diet",
           "password": "Admin@123"
         }
   auth: inherit
