@@ -14,7 +14,7 @@ http:
     data: |-
       {
           "tenant_id": 1,
-          "identifier": "user_store",
+          "identifier": "user_nurse",
           "password": "Admin@123"
         }
   auth: inherit

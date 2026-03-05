@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/nurse/patients/ipd/list?page=1&limit=20
+  url: http://localhost:5000/api/nurse/patients/ipd/list?page=1&limit=20&nurse_id=6
   params:
     - name: ward_id
       value: "2"
@@ -32,21 +32,9 @@ http:
     - name: nurse_id
       value: "6"
       type: query
-      disabled: true
-  body:
-    type: text
-    data: "{\r
-
-      \    \"tenant_id\": 1,\r
-
-      \    \"identifier\": \"dietician_user\",\r
-
-      \    \"password\": \"Admin@123\"\r
-
-      \  }"
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzIxMDczNTEsImV4cCI6MTc4NzY1OTM1MX0.7g0WDZExlA6_1h4_N5bgVvFHggbkH-PE7lkqCX95oGM
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzI0NTMyNjIsImV4cCI6MTc4ODAwNTI2Mn0.c3pFxDpoiiYkNnCygt8Q3ErFSlqhu9LQ_sb1hxsoETk
 
 settings:
   encodeUrl: true

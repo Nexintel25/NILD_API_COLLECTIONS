@@ -1,19 +1,19 @@
 info:
-  name: complete task
+  name: ward overview
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: POST
-  url: http://localhost:5000/api/nurse/tasks/my-tasks/status
-  body:
-    type: json
-    data: |-
-      {
-        "note_id": "26",
-        "status": "completed",
-        "nurse_id": "27"
-      }
+  method: GET
+  url: http://localhost:5000/api/nurse/home/beds/ward-overview?nurse_id=6
+  params:
+    - name: search
+      value: john
+      type: query
+      disabled: true
+    - name: nurse_id
+      value: "6"
+      type: query
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzI0NDgxMDQsImV4cCI6MTc4ODAwMDEwNH0.Z9I4cl00GSSR_xzH6fkGoQset7dAEeVegY_G0p4_mFc
