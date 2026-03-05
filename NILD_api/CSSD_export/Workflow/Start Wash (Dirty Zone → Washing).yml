@@ -1,0 +1,26 @@
+info:
+  name: Start Wash (Dirty Zone → Washing)
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.112:5000/api/cssd/workflow/dirty/start-wash
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "executionId": "1"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

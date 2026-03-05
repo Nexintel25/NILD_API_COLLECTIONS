@@ -1,0 +1,26 @@
+info:
+  name: Cancel Order → set stays unavailable (→ cancelled)
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: http://192.168.1.112:5000/api/cssd/data-entry/instrument-requests/1/status
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "status": "cancelled"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

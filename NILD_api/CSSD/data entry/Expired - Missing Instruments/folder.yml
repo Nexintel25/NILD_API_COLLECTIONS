@@ -1,7 +1,0 @@
-info:
-  name: Expired / Missing Instruments
-  type: folder
-  seq: 6
-
-request:
-  auth: inherit

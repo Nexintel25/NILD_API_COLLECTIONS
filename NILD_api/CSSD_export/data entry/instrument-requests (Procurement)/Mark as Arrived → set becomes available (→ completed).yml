@@ -1,0 +1,28 @@
+info:
+  name: Mark as Arrived → set becomes available (→ completed)
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: http://localhost:5000/api/cssd/data-entry/instrument-requests/5/status
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "status": "completed"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzaW5nX2FkbWluIiwiZW1haWwiOiJudXJzZWFkbWluQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJOVVIwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjYsInJvbGVfY29kZSI6Ik5VUlNJTkdfQURNSU4iLCJpYXQiOjE3NzIxOTM4ODUsImV4cCI6MTc4Nzc0NTg4NX0.rJZGZiaOIcwFhBYsGPudHrayomhfyUOJGbOpJGRsSaY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

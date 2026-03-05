@@ -1,0 +1,32 @@
+info:
+  name: Create Autoclave Entry
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.112:5000/api/cssd/data-entry/autoclave
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "machineId": "AUTO-001",
+          "batchNumber": "AUTO-BATCH-1002",
+          "loadType": "Surgical Instruments",
+          "startTime": "2026-02-28T14:00:00.000Z",
+          "endTime": "2026-02-28T15:30:00.000Z",
+          "tempPressureLogs": "134°C / 2.2 bar",
+          "cycleResult": "Pass"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,7 +1,0 @@
-info:
-  name: CSSD
-  type: folder
-  seq: 18
-
-request:
-  auth: inherit

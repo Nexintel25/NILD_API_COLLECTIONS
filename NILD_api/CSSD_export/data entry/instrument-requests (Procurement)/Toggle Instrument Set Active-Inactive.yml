@@ -1,0 +1,26 @@
+info:
+  name: Toggle Instrument Set Active/Inactive
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: http://192.168.1.112:5000/api/cssd/data-entry/instrument-requests/instrument-sets/1/toggle-status
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "is_active": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
