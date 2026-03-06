@@ -5,12 +5,10 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/dietician/diet-plans/1/approve
+  url: http://localhost:5000/api/dietician/diet-plans/NILD-20260223-0001/approve
   headers:
-    - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY
-    - name: Content-Type
-      value: application/json
+    - name: authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY

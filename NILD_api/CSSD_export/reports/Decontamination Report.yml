@@ -1,0 +1,18 @@
+info:
+  name: Decontamination Report
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://192.168.1.112:5000/api/cssd/reports/decontamination
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

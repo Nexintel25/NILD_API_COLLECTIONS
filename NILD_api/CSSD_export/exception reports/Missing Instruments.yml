@@ -1,0 +1,18 @@
+info:
+  name: Missing Instruments
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://192.168.1.112:5000/api/cssd/exception/missing
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

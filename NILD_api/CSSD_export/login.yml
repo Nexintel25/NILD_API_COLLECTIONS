@@ -1,11 +1,14 @@
 info:
-  name: New Request
+  name: login
   type: http
-  seq: 1
+  seq: 5
 
 http:
   method: POST
   url: http://localhost:5000/api/auth/login
+  headers:
+    - name: Content-Type
+      value: application/json
   body:
     type: json
     data: |-
@@ -13,7 +16,7 @@ http:
           "tenant_id": 1,
           "identifier": "user_doctor",
           "password": "Admin@123"
-      }
+        }
   auth: inherit
 
 settings:

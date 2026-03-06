@@ -1,0 +1,25 @@
+info:
+  name: Get Autoclave Entries
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://192.168.1.112:5000/api/cssd/data-entry/autoclave?page=1&limit=10
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

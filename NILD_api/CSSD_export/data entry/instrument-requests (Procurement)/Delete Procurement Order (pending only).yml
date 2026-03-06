@@ -1,0 +1,18 @@
+info:
+  name: Delete Procurement Order (pending only)
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: http://192.168.1.112:5000/api/cssd/data-entry/instrument-requests/1
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_BEARER_TOKEN
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -17,11 +17,11 @@ http:
       {
         "current_session": 6,
         "goal_scores": {
-          "Range of Motion": 80,
+          "Range of Motion": 30,
           "Muscle Strength": 70,
-          "Balance": 75,
-          "Weight Bearing": 85,
-          "Pain Management": 90
+          "Balance": 35,
+          "Weight Bearing": 35,
+          "Pain Management": 40
         },
         "calculated_status": "Improving",
         "next_checkup_date": "2026-03-16"
