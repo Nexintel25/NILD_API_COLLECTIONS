@@ -1,0 +1,18 @@
+info:
+  name: Occupancy Report
+  type: http
+  seq: 5
+
+http:
+  method: get
+  url: http://localhost:5000/api/management/bed-management/occupancy-report
+  headers:
+    - name: Authorization
+      value: Bearer <your_jwt_token>
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
