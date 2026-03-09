@@ -1,0 +1,7 @@
+info:
+  name: "2 get api "
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

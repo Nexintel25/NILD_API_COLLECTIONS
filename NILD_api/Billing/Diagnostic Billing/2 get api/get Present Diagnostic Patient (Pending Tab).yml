@@ -1,0 +1,27 @@
+info:
+  name: get Present Diagnostic Patient (Pending Tab)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/billing/diagnostics/pending?page=1&limit=15
+  headers:
+    - name: Authorization
+      value: Bearer <TOKEN>
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "15"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
