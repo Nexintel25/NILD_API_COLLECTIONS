@@ -8,55 +8,30 @@ http:
   url: http://localhost:5000/api/doctor-opd/prescriptions
   body:
     type: json
-    data: "{\r
-
-      \  \"tenantId\": 1,\r
-
-      \  \"patientId\": 31,\r
-
-      \  \"visitDate\": \"2026-02-13\",\r
-
-      \  \"diseaseSummary\": \"Acute viral fever\",\r
-
-      \  \"symptomAndHistory\": \"Patient complains of high fever for 3 days with mild headache and body pain.\",\r
-
-      \  \"prescribedMedicines\": [\r
-
-      \    {\r
-
-      \      \"medicineName\": \"Paracetamol\",\r
-
-      \      \"dose\": 500,\r
-
-      \      \"frequency\": \"Twice daily\",\r
-
-      \      \"duration\": \"5 days\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"medicineName\": \"Cetirizine\",\r
-
-      \      \"dose\": 10,\r
-
-      \      \"frequency\": \"Once daily\",\r
-
-      \      \"duration\": \"3 days\"\r
-
-      \    }\r
-
-      \  ],\r
-
-      \  \"recommendedTests\": [\r
-
-      \    \"Complete Blood Count (CBC)\",\r
-
-      \    \"Comprehensive Lipid Panel\"\r
-
-      \  ]\r
-
-      }\r\n"
+    data: |
+      {
+        "tenantId": 1,
+        "patientId": 88,
+        "diseaseSummary": "Acute viral fever",
+        "symptomAndHistory": "Patient complains of high fever for 3 days with mild headache and body pain.",
+        "prescribedMedicines": [
+          {
+            "medicineName": "Paracetamol",
+            "dose": 500,
+            "frequency": "Twice daily",
+            "duration": "5 days"
+          },
+          {
+            "medicineName": "Cetirizine",
+            "dose": 10,
+            "frequency": "Once daily",
+            "duration": "3 days"
+          }
+        ],
+        "recommendedTestIds": [
+         1,2
+        ]
+      }
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIxMDcxMjMsImV4cCI6MTc4NzY1OTEyM30.ATRq5XtGIRV9Lhqs1ST8YXfxxtPajnBxnyptBH-RKTM

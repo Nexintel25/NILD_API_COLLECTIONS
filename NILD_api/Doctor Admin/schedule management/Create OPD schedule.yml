@@ -15,15 +15,15 @@ http:
     type: json
     data: |-
       {
-          "doctor_ref": "DOC-1021",
+          "doctor_ref": "DOC0004",
           "duty_date": "2026-02-22",
-          "start_time": "2026-02-22T09:00:00.000Z",
+          "start_time": "2026-03-22T09:00:00.000Z",
           "end_time": "2026-02-22T12:00:00.000Z",
           "schedule_type": "opd",
           "slot_duration_minutes": 15,
           "max_patients": 12,
           "consultation_mode": "in_person",
-          "department_id": 4,
+          "department_id": 2,
           "notes": "Morning OPD clinic"
         }
   auth:

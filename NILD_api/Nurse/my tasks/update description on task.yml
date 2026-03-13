@@ -1,0 +1,25 @@
+info:
+  name: update description on task
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/nurse/tasks/my-tasks/description
+  body:
+    type: json
+    data: |-
+      {
+        "note_id": "27",
+        "description": "extra job created by aratrika",
+        "nurse_id": "6"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzI0Mzk3MDMsImV4cCI6MTc4Nzk5MTcwM30.BDwmMIq6OCVjTxSskP7s_eXOVsFQ8IGi1BmpaRHUmhg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

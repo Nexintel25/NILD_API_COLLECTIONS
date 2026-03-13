@@ -8,15 +8,15 @@ http:
   url: http://localhost:5000/api/nurse/patients/ipd/list?page=1&limit=20&nurse_id=6
   params:
     - name: ward_id
-      value: "2"
+      value: "4"
       type: query
       disabled: true
     - name: bed_id
-      value: "12"
+      value: "1"
       type: query
       disabled: true
     - name: status
-      value: admitted
+      value: transferred
       type: query
       disabled: true
     - name: page

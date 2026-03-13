@@ -36,7 +36,9 @@ http:
             }
           ]
         }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2NfYWRtaW4iLCJlbWFpbCI6ImRvY2FkbWluQGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJET0MwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjQsInJvbGVfY29kZSI6IkRPQ1RPUl9BRE1JTiIsImlhdCI6MTc3MzE0NzYyOSwiZXhwIjoxNzg4Njk5NjI5fQ.WMBzAScgPF-yP4Ub7JTYjApiTXheKcntqJJP1vCYzzI
 
 settings:
   encodeUrl: true
