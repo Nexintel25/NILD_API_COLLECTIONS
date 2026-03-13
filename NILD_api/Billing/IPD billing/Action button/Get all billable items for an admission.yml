@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/billing/ipd/admission/11/charges-detail
+  url: http://localhost:5000/api/billing/ipd/admission/9/charges-detail
   headers:
     - name: authorization
       value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3Mjc4MTE0NCwiZXhwIjoxNzg4MzMzMTQ0fQ.Ux_reolRbfFrXBMCW9t9qHcyrsJ1NFAyphZiy8nJq80

@@ -15,7 +15,7 @@ http:
     type: json
     data: |-
       {
-        "patient_id": 1,
+        "patient_id": 107,
         "test_id": 3,
         "test_type": "LAB_TEST",
         "ordering_doctor_id": 1,
@@ -23,7 +23,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzM4NTY4MiwiZXhwIjoxNzg4OTM3NjgyfQ.cjJNDqTHBPcYfvaCrAnUn1iz8POylctDX1Rr2naTZIw
 
 settings:
   encodeUrl: false
