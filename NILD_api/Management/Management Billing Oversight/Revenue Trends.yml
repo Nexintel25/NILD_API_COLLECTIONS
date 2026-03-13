@@ -1,0 +1,30 @@
+info:
+  name: Revenue Trends
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/management/billing/revenue-trends?period=daily&startDate={{startDate}}&endDate={{endDate}}&bill_type=all"
+  params:
+    - name: period
+      value: daily
+      type: query
+    - name: startDate
+      value: "{{startDate}}"
+      type: query
+    - name: endDate
+      value: "{{endDate}}"
+      type: query
+    - name: bill_type
+      value: all
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Time-series revenue data for charting (daily/monthly).
