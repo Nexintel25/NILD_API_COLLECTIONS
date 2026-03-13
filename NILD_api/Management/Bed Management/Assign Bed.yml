@@ -15,10 +15,12 @@ http:
     type: json
     data: |-
       {
-        "admissionId": "9802",
-        "bedNumber": "W3-B12"
+        "admissionId": "7",
+        "bedNumber": "ICU-06"
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9tYW5hZ2VtZW50IiwiZW1haWwiOiJtZ210QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJNQU4wMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjIsInJvbGVfY29kZSI6Ik1BTkFHRU1FTlQiLCJpYXQiOjE3NzMwNDA5ODQsImV4cCI6MTc4ODU5Mjk4NH0.mQy0J9sUMk5dcm7eu3f3kFoxxPghTUO3E6RM-WKZxPY
 
 settings:
   encodeUrl: false

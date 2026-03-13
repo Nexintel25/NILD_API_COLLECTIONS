@@ -1,0 +1,28 @@
+info:
+  name: Apply Concession
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseUrl}}/management/billing/bills/{{billId}}/apply-concession"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "concession_type": "divyangjan",
+        "concession_reason": "Approved by management",
+        "discount_amount": 500
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: Apply or update concession on an unpaid/partial bill.
