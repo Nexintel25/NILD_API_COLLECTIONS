@@ -1,0 +1,14 @@
+opencollection: 1.0.0
+info:
+  name: "My Workspace"
+  type: workspace
+
+collections:
+  - name: "NILD_API"
+    path: "D:/NILD APIS/NILD_API_COLLECTIONS"
+  - name: "Radiology Module API"
+    path: "D:/NILD APIS/Radiology Module API"
+
+specs:
+
+docs: ''
