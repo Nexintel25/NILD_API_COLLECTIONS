@@ -1,0 +1,28 @@
+info:
+  name: POST Verify Disability
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:5000/api/billing/diagnostics/patient/1/verify-disability
+  headers:
+    - name: Authorization
+      value: Bearer <TOKEN>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "disabilityCardNumber": "CARD-12345"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

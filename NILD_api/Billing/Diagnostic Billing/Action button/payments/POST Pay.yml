@@ -1,0 +1,77 @@
+info:
+  name: " POST Pay "
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:5000/api/billing/diagnostics/pay
+  headers:
+    - name: Authorization
+      value: Bearer <TOKEN>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "patient_id": 1,
+        "total_amount": 141.00,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "net_amount": 141.00,
+        "payment_mode": "cash",
+        "concession_type": null,
+        "concession_reason": null,
+        "services": [
+          {
+            "item_id": "11",
+            "order_id": "11",
+            "service_type": "LAB_TEST",
+            "service_id": "1",
+            "service_name": "Complete Blood Count (CBC)",
+            "unit_price": 25.50,
+            "quantity": 1,
+            "discount": 0
+          },
+          {
+            "item_id": "12",
+            "order_id": "11",
+            "service_type": "LAB_TEST",
+            "service_id": "2",
+            "service_name": "Comprehensive Lipid Panel",
+            "unit_price": 45.00,
+            "quantity": 1,
+            "discount": 0
+          },
+          {
+            "item_id": "14",
+            "order_id": "17",
+            "service_type": "LAB_TEST",
+            "service_id": "1",
+            "service_name": "Complete Blood Count (CBC)",
+            "unit_price": 25.50,
+            "quantity": 1,
+            "discount": 0
+          },
+          {
+            "item_id": "15",
+            "order_id": "17",
+            "service_type": "LAB_TEST",
+            "service_id": "2",
+            "service_name": "Comprehensive Lipid Panel",
+            "unit_price": 45.00,
+            "quantity": 1,
+            "discount": 0
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

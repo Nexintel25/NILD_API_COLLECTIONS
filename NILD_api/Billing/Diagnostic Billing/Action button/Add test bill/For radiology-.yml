@@ -1,0 +1,32 @@
+info:
+  name: "For radiology:"
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/billing/diagnostics/add-test
+  headers:
+    - name: authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "patient_id": 1,
+        "test_id": 1,
+        "test_type": "RADIOLOGY",
+        "ordering_doctor_id": 1,
+        "priority": "urgent"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzA0MjEyNywiZXhwIjoxNzg4NTk0MTI3fQ.5I08-TLqU83b4k5nUphmGPFB-xt4QMSfTxXEKd767kY
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

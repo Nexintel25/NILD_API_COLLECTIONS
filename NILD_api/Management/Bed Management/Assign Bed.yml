@@ -1,0 +1,27 @@
+info:
+  name: Assign Bed
+  type: http
+  seq: 3
+
+http:
+  method: post
+  url: http://localhost:5000/api/management/bed-management/assign-bed
+  headers:
+    - name: Authorization
+      value: Bearer <your_jwt_token>
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "admissionId": "9802",
+        "bedNumber": "W3-B12"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,7 +1,7 @@
 info:
-  name: Sterile Dispatch
+  name: Action button
   type: folder
-  seq: 3
+  seq: 2
 
 request:
   auth: inherit
