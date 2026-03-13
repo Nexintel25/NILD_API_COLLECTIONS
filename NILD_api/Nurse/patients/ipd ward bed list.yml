@@ -5,12 +5,14 @@ info:
 
 http:
   method: GET
-  url: api/nurse/patients/ipd/ward-bed-list?nurse_id=<NURSE_ID
+  url: http://localhost:5000/api/nurse/patients/ipd/ward-bed-list?nurse_id=4
   params:
     - name: nurse_id
-      value: <NURSE_ID
+      value: "4"
       type: query
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9udXJzZSIsImVtYWlsIjoibnVyc2VAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6Ik5VUjAwMDIiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6Nywicm9sZV9jb2RlIjoiTlVSU0UiLCJpYXQiOjE3NzI0NTMyNjIsImV4cCI6MTc4ODAwNTI2Mn0.c3pFxDpoiiYkNnCygt8Q3ErFSlqhu9LQ_sb1hxsoETk
 
 settings:
   encodeUrl: true

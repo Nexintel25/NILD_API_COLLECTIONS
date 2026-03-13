@@ -1,0 +1,15 @@
+info:
+  name: leave request
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: /api/leave/request
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

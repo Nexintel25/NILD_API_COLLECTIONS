@@ -8,20 +8,8 @@ http:
   url: http://localhost:5000/api/doctor-opd/opd-patients?dateType=current&page=1&offset=10&type=all
   params:
     - name: dateType
-      value: all
-      type: query
-      disabled: true
-    - name: dateType
       value: current
       type: query
-    - name: dateType
-      value: previous
-      type: query
-      disabled: true
-    - name: dateType
-      value: range
-      type: query
-      disabled: true
     - name: page
       value: "1"
       type: query
@@ -31,6 +19,18 @@ http:
     - name: type
       value: all
       type: query
+    - name: dateType
+      value: all
+      type: query
+      disabled: true
+    - name: dateType
+      value: previous
+      type: query
+      disabled: true
+    - name: dateType
+      value: range
+      type: query
+      disabled: true
     - name: type
       value: new
       type: query
@@ -45,6 +45,14 @@ http:
       disabled: true
     - name: search
       value: sonu
+      type: query
+      disabled: true
+    - name: fromDate
+      value: 2026-03-09
+      type: query
+      disabled: true
+    - name: toDate
+      value: 2026-03-10
       type: query
       disabled: true
   auth:

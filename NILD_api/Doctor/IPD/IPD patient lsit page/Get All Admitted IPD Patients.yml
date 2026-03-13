@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/doctor-ipd/patients?page=1&limit=15&status=admitted
+  url: http://localhost:5000/api/doctor-ipd/patients?page=1&limit=15
   params:
     - name: page
       value: "1"
@@ -16,6 +16,7 @@ http:
     - name: status
       value: admitted
       type: query
+      disabled: true
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3Mjc4NDE1OCwiZXhwIjoxNzg4MzM2MTU4fQ.joSeN2R_6l4IKg9g_mUk71UxxdKspaTReueMlvKuVLY
