@@ -7,7 +7,7 @@ http:
   method: POST
   url: http://localhost:5000/api/laundry/linen-requests/1/accept
   body:
-    type: json
+    type: text
     data: ""
   auth:
     type: bearer
