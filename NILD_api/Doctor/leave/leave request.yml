@@ -5,8 +5,20 @@ info:
 
 http:
   method: POST
-  url: /api/leave/request
-  auth: inherit
+  url: http://localhost:5000/api/leave/create/request
+  body:
+    type: json
+    data: |
+      {
+        "staff_id": 5,
+        "leave_type": "Casual leave",
+        "from_date": "2026-03-22",
+        "to_date": "2026-03-22",
+        "reason": "Personal work"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMzOTY2OTMsImV4cCI6MTc4ODk0ODY5M30.u1JmQTdXx-xaxwb2GzKjWnm935a8iLqy0DXC1wUZWI4
 
 settings:
   encodeUrl: true

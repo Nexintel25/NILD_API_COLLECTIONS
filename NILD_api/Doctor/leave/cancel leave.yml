@@ -5,10 +5,17 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/leave/request/5/cancel
+  url: http://localhost:5000/api/leave/request/cancel
+  body:
+    type: json
+    data: |-
+      {
+        "leave_id": 6,
+        "staff_id": 5
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMxNDcxMzMsImV4cCI6MTc4ODY5OTEzM30.6FiPIk3Q9ZAYQaDar5HhB_AKcZyPI9YtfH8fmJ8m5WI
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMzOTc0OTQsImV4cCI6MTc4ODk0OTQ5NH0.tNplZDCtOrF-Qn8fvBlqpmilkozPBgcF58tL4GcRd-k
 
 settings:
   encodeUrl: true

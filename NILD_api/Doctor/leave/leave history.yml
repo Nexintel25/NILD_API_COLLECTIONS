@@ -5,8 +5,7 @@ info:
 
 http:
   method: GET
-  url: |
-    GET /leave/request?page=1&limit=10&staff_id=12&status=pending&from_date=2024-03-13&to_date=2026-03-13
+  url: http://localhost:5000/api/leave/request?page=1&limit=10&staff_id=5
   params:
     - name: page
       value: "1"
@@ -15,19 +14,23 @@ http:
       value: "10"
       type: query
     - name: staff_id
-      value: "12"
+      value: "5"
       type: query
     - name: status
       value: pending
       type: query
+      disabled: true
     - name: from_date
-      value: 2024-03-13
+      value: 2024-03-14
       type: query
+      disabled: true
     - name: to_date
-      value: |
-        2026-03-13
+      value: 2026-03-14
       type: query
-  auth: inherit
+      disabled: true
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMxNDcxMzMsImV4cCI6MTc4ODY5OTEzM30.6FiPIk3Q9ZAYQaDar5HhB_AKcZyPI9YtfH8fmJ8m5WI
 
 settings:
   encodeUrl: true
