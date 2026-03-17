@@ -15,36 +15,43 @@ http:
     type: json
     data: |-
       {
-          "patientId": "NILD-20260213-0003",
-          "patientName": "Sayak",
-          "anthropometrics": {
-            "age": 30,
-            "gender": "Male",
-            "height": 175,
-            "weight": 70,
-            "mobility": "Ambulatory"
-          },
-          "labResults": {
-            "glucose": 95,
-            "hba1c": 5.4
-          },
-          "prescription": {
-            "dietType": "Regular",
-            "calories": 2000,
-            "protein": 80
-          },
-          "schedule": {
-            "breakfast": "08:00",
-            "lunch": "13:00",
-            "dinner": "20:00"
-          },
-          "notes": "Emergency patient - Trauma case. Monitor nutrition intake.",
-          "tenantId": "1",
-          "createdBy": "1"
-        }
+        "patientId": "NILD-20260226-0001",
+        "patientName": "Rahul Sharma",
+        "anthropometrics": {
+          "age": 42,
+          "gender": "Male",
+          "height": 170,
+          "weight": 74,
+          "mobility": "Ambulatory"
+        },
+        "labResults": {
+          "glucose": 118,
+          "hba1c": 6.1
+        },
+        "riskFactors": {
+          "weightStability": "Stable",
+          "foodAllergy": "Peanut",
+          "gastrointestinalStatus": "Mild gastritis"
+        },
+        "prescription": {
+          "dietType": "Diabetic",
+          "calories": 1800,
+          "protein": 70,
+          "fluidRestriction": "1500 ml/day",
+          "sodiumIntake": "< 2g/day",
+          "fiberIntake": "30 g/day"
+        },
+        "schedule": {
+          "breakfast": "08:00",
+          "lunch": "13:00",
+          "dinner": "20:00"
+        },
+        "priority": "High priority",
+        "notes": "Monitor post-meal sugars and appetite."
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6ImRpZXRpY2lhbl91c2VyIiwiZW1haWwiOiJkaWV0aWNpYW5AaG9zcGl0YWwuY29tIiwiZW1wbG95ZWVfaWQiOiJFTVAwMTAiLCJmYWNpbGl0eV9pZCI6bnVsbCwicm9sZV9pZCI6MTAsInJvbGVfY29kZSI6ImRpZXRpY2lhbiIsImlhdCI6MTc3MTQwNDM1MCwiZXhwIjoxNzg2OTU2MzUwfQ.Im7UewDbojTaA7IRColZvXtnuq7c23922LPjCKlUbyY
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNSwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfZGlldCIsImVtYWlsIjoiZGlldEBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRElFMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxNSwicm9sZV9jb2RlIjoiRElFVElDSUFOX05VVFJJVElPTiIsImlhdCI6MTc3MzY0OTIyMSwiZXhwIjoxNzg5MjAxMjIxfQ.Zl_6J6YdSLnGUoDQ3fr-NLAWcBuk16YWzDV1m07HajY
 
 settings:
   encodeUrl: true

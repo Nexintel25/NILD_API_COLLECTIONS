@@ -1,0 +1,7 @@
+info:
+  name: "Patient Auth for login "
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit
