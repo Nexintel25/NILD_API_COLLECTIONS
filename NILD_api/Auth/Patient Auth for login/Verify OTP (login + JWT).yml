@@ -1,0 +1,27 @@
+info:
+  name: Verify OTP (login + JWT)
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/auth/patient/verify-otp
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "tenant_id": 1,
+        "username": "NILD-20260313-0001",
+        "email": "tithim@svu.ac.in",
+        "otp": "849810"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
