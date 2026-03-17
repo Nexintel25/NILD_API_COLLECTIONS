@@ -15,24 +15,25 @@ http:
     type: json
     data: |-
       {
-          "patientId": "7",
-          "otDate": "2026-02-26",
-          "procedureName": "Total Knee Replacement",
-          "diagnosis": "Osteoarthritis of knee",
-          "typeOfAnaesthesia": "Spinal",
-          "surgeonId": "5",
-          "consentObtained": true,
-          "preOpDiagnosis": "Severe osteoarthritis, right knee",
-          "preOpInstructions": "NPO after midnight",
-          "durationMinutes": 120,
-          "bloodLossMl": 200,
-          "postOpInstructions": "Elevate limb. Physiotherapy from Day 1.",
-          "dischargeFromOT": "Ward",
-          "status": "completed"
-        }
+      "patientId": "7",
+      "otDate": "2026-02-26",
+      "procedureName": "Total Knee Replacement",
+      "diagnosis": "Osteoarthritis of knee",
+      "typeOfAnaesthesia": "Spinal",
+      "surgeonId": "5",
+      "operatedByDoctorName": "Dr Rahul Sharma",
+      "consentObtained": true,
+      "preOpDiagnosis": "Severe osteoarthritis, right knee",
+      "preOpInstructions": "NPO after midnight",
+      "durationMinutes": 120,
+      "bloodLossMl": 200,
+      "postOpInstructions": "Elevate limb. Physiotherapy from Day 1.",
+      "dischargeFromOT": "Ward",
+      "status": "completed"
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzI3MDYwNTUsImV4cCI6MTc4ODI1ODA1NX0.CFBbSOTf16IVSYGwLiEbkqt3lLdXzMW7EXenShrWEdI
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzM2NDQzMDQsImV4cCI6MTc4OTE5NjMwNH0.TOcxe4nT0KyK7rd3DPw914bNA7jo-SCjzpZLXTJyo-k
 
 settings:
   encodeUrl: true

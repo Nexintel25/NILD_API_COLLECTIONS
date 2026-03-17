@@ -1,0 +1,22 @@
+info:
+  name: get in ready for ironing batches
+  type: http
+  seq: 8
+
+http:
+  method: get
+  url: http://localhost:5000/api/laundry/washing-batches?status=ironing
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMwNTk5NDMsImV4cCI6MTc4ODYxMTk0M30.mVfrq_2xmHB-j39PIEQ_uctyxvR_87qOvSlU7v8HmRA
+  params:
+    - name: status
+      value: ironing
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
