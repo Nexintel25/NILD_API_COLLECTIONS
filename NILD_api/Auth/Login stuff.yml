@@ -14,7 +14,15 @@ http:
     data: |-
       {
           "tenant_id": 1,
+<<<<<<< HEAD
           "identifier": "user_doctor",
+=======
+<<<<<<< HEAD
+          "identifier": "user_reception",
+=======
+          "identifier": "user_doc_admin",
+>>>>>>> b8cf2678d68838a184dbf42dac867d628be15c9a
+>>>>>>> 66e09658d90251735f445a50f6d8b5d5b977c10e
           "password": "Admin@123"
         }
   auth: inherit

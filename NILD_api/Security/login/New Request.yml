@@ -4,8 +4,16 @@ info:
   seq: 1
 
 http:
-  method: GET
-  url: ""
+  method: POST
+  url: http://localhost:5000/api/auth/login
+  body:
+    type: json
+    data: |-
+      {
+          "tenant_id": 1,
+          "identifier": "user_security",
+          "password": "Admin@123"
+        }
   auth: inherit
 
 settings:

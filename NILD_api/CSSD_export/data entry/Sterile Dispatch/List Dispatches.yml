@@ -5,18 +5,20 @@ info:
 
 http:
   method: GET
-  url: http://192.168.1.112:5000/api/cssd/data-entry/dispatch?page=1&limit=10
+  url: http://localhost:5000/api/cssd/data-entry/dispatch/sterile-items?page=1&limit=20
   headers:
     - name: Authorization
-      value: Bearer YOUR_BEARER_TOKEN
+      value: Bearer <YOUR_JWT_TOKEN>
   params:
     - name: page
       value: "1"
       type: query
     - name: limit
-      value: "10"
+      value: "20"
       type: query
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfY3NzZCIsImVtYWlsIjoiY3NzZEBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiU1RFMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxNCwicm9sZV9jb2RlIjoiU1RFUklMRV9TRVJWSUNFX0NTU0QiLCJpYXQiOjE3NzMwNTYxMjgsImV4cCI6MTc4ODYwODEyOH0.QYAIFIHsbQVIf5WfZ66K1qLdzhZ4nm4Y41qvKidzNUk
 
 settings:
   encodeUrl: true

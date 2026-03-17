@@ -5,12 +5,13 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/doctor-ipd/data-entry/patients/upid/NILD-20260224-0001
+  url: http://localhost:5000/api/doctor-ipd/data-entry/patients/upid/NILD-20260313-0007
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIwMTY0MTUsImV4cCI6MTc4NzU2ODQxNX0.sAB3UsEsEVAaj6xkY-rMkCcRSm-UmjWxnvovicEvTZM
   auth:
     type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMxMzczNzMsImV4cCI6MTc4ODY4OTM3M30.EPthXXwIJ2tccEXH5rGSrCz4lW03ffK6wzw9tiDg8k8
 
 settings:
   encodeUrl: true

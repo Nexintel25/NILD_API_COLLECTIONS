@@ -5,13 +5,17 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/rehabilitation/exceptions
+  url: http://localhost:5000/api/rehabilitation/exceptions?onlyPending=true
   headers:
-    - name: Authorization
+    - name: authorization
       value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzEzMjE1MjIsImV4cCI6MTc4Njg3MzUyMn0.VVipV4M5k6q0QLf6l65cGWZJ5SnAFJSb6vB5h2d0f5k
+  params:
+    - name: onlyPending
+      value: "true"
+      type: query
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzEzMjE1MjIsImV4cCI6MTc4Njg3MzUyMn0.VVipV4M5k6q0QLf6l65cGWZJ5SnAFJSb6vB5h2d0f5k
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9yZWhhYiIsImVtYWlsIjoicmVoYWJAYXBleC5jb20iLCJlbXBsb3llZV9pZCI6IlJFSDAwMDEiLCJmYWNpbGl0eV9pZCI6MSwicm9sZV9pZCI6OCwicm9sZV9jb2RlIjoiUkVIQUJJTElUQVRJT05fU1RBRkYiLCJpYXQiOjE3NzMzMDA2NjAsImV4cCI6MTc4ODg1MjY2MH0.GmL5QEx10otky3F9ugzHbVZYKSuK3lQI9fuTxvdISiQ
 
 settings:
   encodeUrl: true

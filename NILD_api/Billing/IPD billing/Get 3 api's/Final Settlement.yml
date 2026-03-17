@@ -5,13 +5,20 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/billing/ipd/admission/11/settlement
+  url: http://localhost:5000/api/billing/ipd/settlements?page=1&limit=15
   headers:
-    - name: Authorization
-      value: Bearer <TOKEN>
+    - name: authorization
+      value: Bearer eyJhbGci...
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "15"
+      type: query
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3Mjc4MTE0NCwiZXhwIjoxNzg4MzMzMTQ0fQ.Ux_reolRbfFrXBMCW9t9qHcyrsJ1NFAyphZiy8nJq80
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3MzIxMTQyMywiZXhwIjoxNzg4NzYzNDIzfQ.nDKRxsU1-k1dMRLMkVFUU48oHUWb0RJcERiYrnJpH5c
 
 settings:
   encodeUrl: true
