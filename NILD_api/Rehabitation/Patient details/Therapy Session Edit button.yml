@@ -5,28 +5,30 @@ info:
 
 http:
   method: PUT
-  url: http://localhost:5000/api/rehabilitation/entry/3
+  url: http://localhost:5000/api/rehabilitation/patient-details/therapy-sessions/16
   headers:
-    - name: Content-Type
+    - name: authorization
+      value: Bearer YOUR_TOKEN
+    - name: content-type
       value: application/json
-    - name: Authorization
-      value: Bearer YOUR_JWT_TOKEN
   body:
     type: json
     data: |-
       {
-          "sessionDate": "2023-10-25T10:30:00",
-          "therapyType": "PT",
-          "diagnosis": "ACL Tear - Post Surgery",
-          "sessionType": "Follow-up Session",
-          "duration": "45",
-          "intensity": "Moderate",
-          "interventions": "Gait training, Balance exercises, Range of motion work",
-          "response": "Patient walking more confidently, pain level 2/10",
-          "medicine": "Ibuprofen 400mg PRN, Paracetamol 500mg",
-          "status": "In Progress",
-          "nextCheckup": "2023-11-01"
-        }
+        "session_date": "2023-10-25",
+        "session_time": "10:30:00",
+        "therapyType": "PT",
+        "diagnosis": "ACL Tear - Post Surgery",
+        "sessionType": "Follow-up Session",
+        "duration": "45",
+        "intensity": "Moderate",
+        "interventions": "Gait training, Balance exercises, Range of motion work",
+        "response": "Patient walking more confidently, pain level 2/10",
+        "medicine": "Ibuprofen 400mg PRN, Paracetamol 500mg",
+        "status": "In Progress",
+        "nextCheckup": "2026-04-01",
+        "nextCheckupTime": "14:30"
+      }
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidGhlcmFwaXN0X3VzZXIiLCJlbWFpbCI6InRoZXJhcGlzdEBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwNyIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjo3LCJyb2xlX2NvZGUiOiJ0aGVyYXBpc3QiLCJpYXQiOjE3NzA5Nzg5NjQsImV4cCI6MTc4NjUzMDk2NH0.h3hIrnhIvMoMwIcz2nPEpeEMfT_i8bWekvRA-aNjd60
