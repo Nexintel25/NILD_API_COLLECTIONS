@@ -1,0 +1,38 @@
+info:
+  name: issue medicine of admitted patient
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/pharmacy/ipd-billing/issues
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX3VzZXIiLCJlbWFpbCI6ImRvY3RvckBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwMSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxLCJyb2xlX2NvZGUiOiJkb2N0b3IiLCJpYXQiOjE3NzEyMjMwOTUsImV4cCI6MTc4Njc3NTA5NX0.m24vi0WruVuGnFkcMa4R2iBLrjFB3lo4fLSytsmNFK0
+  body:
+    type: json
+    data: |
+      {
+        "admissionId": 28,
+        "patientId": 133,
+        "issueDate": "2026-03-20",
+        "remarks": "Day medicine issue",
+        "items": [
+          {
+            "drugId": 3,
+            "stockId": 9,
+            "issuedQuantity": 2,
+            "dosage": "500 mg",
+            "frequency": "BD",
+            "duration": "1 day",
+            "instructions": "After food"
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

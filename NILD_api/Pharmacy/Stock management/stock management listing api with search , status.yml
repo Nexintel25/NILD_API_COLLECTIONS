@@ -5,10 +5,14 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/pharmacy/stock/inventory?status=current_stock
+  url: http://localhost:5000/api/pharmacy/stock/inventory?status=expiry_soon
   params:
     - name: status
       value: current_stock
+      type: query
+      disabled: true
+    - name: status
+      value: expiry_soon
       type: query
   auth:
     type: bearer

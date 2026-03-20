@@ -10,10 +10,10 @@ http:
     type: json
     data: |+
       {
-        "drugId": 2,
-        "drugName": "Cetirizine",
-        "batchNumber": "BATCH-20260313-0002",
-        "adjustmentType": "increase",
+        "drugId": 3,
+        "drugName": "Calpol 650mg",
+        "batchNumber": "BATCH-20260318-0001",
+        "adjustmentType": "decrease",
         "quantity": 50
       }
 

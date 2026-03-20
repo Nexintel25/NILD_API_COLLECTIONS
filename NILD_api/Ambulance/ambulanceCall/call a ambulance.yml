@@ -13,14 +13,15 @@ http:
       value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzMwNTk5NDMsImV4cCI6MTc4ODYxMTk0M30.mVfrq_2xmHB-j39PIEQ_uctyxvR_87qOvSlU7v8HmRA
   body:
     type: json
-    data: |-
+    data: |
       {
         "call_type": "emergency",
+        "trip_direction": "incoming",
         "priority": "critical",
-        "pickup_location": "ER Triage Area",
-        "patient_name":"barun kumar",
-        "drop_location": "City Cardiac Center",
-        "call_time": "2026-03-13T06:30:00+05:30"
+        "patient_name": "Rahul Das",
+        "pickup_location": "Village Road",
+        "drop_location": "Main Hospital",
+        "call_time": "2026-03-18T10:30:00+05:30"
       }
   auth: inherit
 
