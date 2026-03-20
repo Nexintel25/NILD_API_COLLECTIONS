@@ -1,0 +1,28 @@
+info:
+  name: Delete Chereges
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: http://localhost:5000/api/billing/diagnostics/remove-test/49
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_VALID_TOKEN
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "service_type": "LAB_TEST"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfYmlsbGluZyIsImVtYWlsIjoiYmlsbGluZ0BhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiQklMMDAwMSIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjoxMiwicm9sZV9jb2RlIjoiQklMTElOR19BQ0NPVU5UUyIsImlhdCI6MTc3Mzc0MTQ3NywiZXhwIjoxNzg5MjkzNDc3fQ.Zx-GXeWTbXY3826QKO8brDmAJJRc9volf1Mm_xvsetU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
