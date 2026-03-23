@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/laundry/linen-requests/1/accept
+  url: http://localhost:5000/api/laundry/linen-requests/9/accept
   body:
     type: text
     data: ""

@@ -13,15 +13,15 @@ http:
     type: json
     data: |
       {
-        "admissionId": 28,
-        "patientId": 133,
+        "admissionId": 13,
+        "patientId": 89,
         "issueDate": "2026-03-20",
         "remarks": "Day medicine issue",
         "items": [
           {
             "drugId": 3,
             "stockId": 9,
-            "issuedQuantity": 2,
+            "issuedQuantity": 15,
             "dosage": "500 mg",
             "frequency": "BD",
             "duration": "1 day",

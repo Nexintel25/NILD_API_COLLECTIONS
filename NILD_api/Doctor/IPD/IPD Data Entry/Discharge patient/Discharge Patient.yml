@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: http://localhost:5000/api/doctor-ipd/discharge/by-upid/NILD-20260224-0001
+  url: http://localhost:5000/api/doctor-ipd/discharge/by-upid/NILD-20260313-0010
   headers:
     - name: Content-Type
       value: application/json
@@ -16,7 +16,7 @@ http:
     data: |-
       {
         "dischargeType": "Regular",
-        "dischargeDate": "2026-02-26T15:30:00Z",
+        "dischargeDate": "2026-03-20T15:30:00Z",
         "remarks": "Patient recovered completely"
       }
   auth:
