@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/ambulance/trip-logs/dashboard?endDate=2026-02-23
+  url: http://localhost:5000/api/ambulance/trip-logs/dashboard?endDate=2026-03-24
   params:
     - name: endDate
-      value: 2026-02-23
+      value: 2026-03-24
       type: query
   auth:
     type: bearer
