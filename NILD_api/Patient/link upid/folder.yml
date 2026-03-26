@@ -1,0 +1,7 @@
+info:
+  name: link upid
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

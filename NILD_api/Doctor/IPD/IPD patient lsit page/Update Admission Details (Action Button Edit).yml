@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: http://localhost:5000/api/doctor-ipd/patients/NILD-20260226-0002
+  url: http://localhost:5000/api/doctor-ipd/patients/NILD-20260313-0006
   headers:
     - name: Authorization
       value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzIzODY5NTAsImV4cCI6MTc4NzkzODk1MH0.iVrX6hWW7KGjL3Xxcaeny76nW5QytrJgctfaNkfo7C4

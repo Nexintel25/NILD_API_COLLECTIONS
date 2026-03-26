@@ -1,5 +1,5 @@
 info:
-  name: New Request
+  name: New Request copy
   type: http
   seq: 4
 
@@ -11,7 +11,7 @@ http:
     data: |-
       {
           "tenant_id": 1,
-          "identifier": "user_nurse",
+          "identifier": "user_doctor",
           "password": "Admin@123"
         }
 

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/doctor-opd/opd-patients?dateType=current&page=1&offset=10&type=all
+  url: http://localhost:5000/api/doctor-opd/opd-patients?dateType=current&page=1&offset=10&type=all&visitStatus=completed
   params:
     - name: dateType
       value: current
@@ -19,6 +19,18 @@ http:
     - name: type
       value: all
       type: query
+    - name: priority
+      value: normal
+      type: query
+      disabled: true
+    - name: priority
+      value: urgent
+      type: query
+      disabled: true
+    - name: priority
+      value: emergency
+      type: query
+      disabled: true
     - name: dateType
       value: all
       type: query
@@ -53,6 +65,21 @@ http:
       disabled: true
     - name: toDate
       value: 2026-03-10
+      type: query
+      disabled: true
+    - name: visitStatus
+      value: waiting
+      type: query
+      disabled: true
+    - name: visitStatus
+      value: in_consultation
+      type: query
+      disabled: true
+    - name: visitStatus
+      value: completed
+      type: query
+    - name: visitStatus
+      value: cancelled
       type: query
       disabled: true
   auth:

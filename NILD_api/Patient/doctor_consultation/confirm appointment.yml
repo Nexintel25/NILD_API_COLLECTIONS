@@ -1,0 +1,28 @@
+info:
+  name: confirm appointment
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5000/api/patient/doctor-consultation/confirm-appointment
+  body:
+    type: json
+    data: |-
+      {
+        "duty_date": "2026-03-23",
+        "departmentId": 2,
+        "profileId": 5,
+        "slot_start_time": "2026-03-23T12:00:00.000Z",
+        "slot_end_time": "2026-03-23T12:15:00.000Z",
+        "reason": "Fever and headache"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJfdHlwZSI6InBhdGllbnQiLCJ1cGlkIjoiTklMRC0yMDI2MDIyNi0wMDAzIiwidXNlcm5hbWUiOiJTaGF5YW4gS2hhbiIsImVtYWlsIjoic3VtYW5uQHN2dS5hYy5pbiIsImlhdCI6MTc3MzkxNDU1MCwiZXhwIjoxNzg5NDY2NTUwfQ.Z0ZYqlc8f-RWK7_HQ1XjMSrZWxPdTPxKl1RzcR1wrGo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

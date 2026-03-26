@@ -1,0 +1,7 @@
+info:
+  name: doctor_consultation
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

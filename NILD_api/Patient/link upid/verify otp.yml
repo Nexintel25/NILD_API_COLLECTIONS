@@ -1,0 +1,23 @@
+info:
+  name: verify otp
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5000/api/patient/link-upid/verify-otp
+  body:
+    type: json
+    data: |
+      {
+        "tenant_id": 1,
+        "upid": "NILD-20260226-0003",
+        "otp": "739102"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

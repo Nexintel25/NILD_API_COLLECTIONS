@@ -1,21 +1,17 @@
 info:
-  name: Request OTP
+  name: requst otp
   type: http
   seq: 1
 
 http:
   method: POST
-  url: http://localhost:5000/api/auth/patient/request-otp
-  headers:
-    - name: Content-Type
-      value: application/json
+  url: http://localhost:5000/api/patient/link-upid/request-otp
   body:
     type: json
     data: |-
       {
         "tenant_id": 1,
-        //"username": "NILD-20260226-0003",
-        "email": "sumann@svu.ac.in"
+        "upid": "NILD-20260226-0003"
       }
   auth: inherit
 

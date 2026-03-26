@@ -1,0 +1,17 @@
+info:
+  name: rehab progress
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/patient/rehab-schedule/progress/weekly
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJfdHlwZSI6InBhdGllbnQiLCJ1cGlkIjoiTklMRC0yMDI2MDIyNi0wMDAzIiwidXNlcm5hbWUiOiJTaGF5YW4gS2hhbiIsImVtYWlsIjoic3VtYW5uQHN2dS5hYy5pbiIsImlhdCI6MTc3NDI0OTE3MywiZXhwIjoxNzg5ODAxMTczfQ.eDCRFzyHFgtCMiilme0QhS2pX4NCvsI0-sbNlCHKCSg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

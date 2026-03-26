@@ -1,0 +1,30 @@
+info:
+  name: Get doctor using department
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5000/api/patient/doctor-consultation/doctors?departmentId=2&page=1&limit=10&search=virat
+  params:
+    - name: departmentId
+      value: "2"
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: search
+      value: virat
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJ0ZW5hbnRfaWQiOjEsInVzZXJfdHlwZSI6InBhdGllbnQiLCJ1cGlkIjoiTklMRC0yMDI2MDIyNi0wMDAzIiwidXNlcm5hbWUiOiJTaGF5YW4gS2hhbiIsImVtYWlsIjoic3VtYW5uQHN2dS5hYy5pbiIsImlhdCI6MTc3MzkxNDU1MCwiZXhwIjoxNzg5NDY2NTUwfQ.Z0ZYqlc8f-RWK7_HQ1XjMSrZWxPdTPxKl1RzcR1wrGo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
