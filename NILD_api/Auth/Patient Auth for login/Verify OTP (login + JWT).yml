@@ -14,9 +14,14 @@ http:
     data: |-
       {
         "tenant_id": 1,
+<<<<<<< HEAD
         //"username": "NILD-20260313-0001",
         "email": "sumann@svu.ac.in",
         "otp": "555930"
+=======
+        "email": "sumann@svu.ac.in",
+        "otp": "478029"
+>>>>>>> a2879375b98ff68f7d9c4a06ca7732f693d99d90
       }
   auth: inherit
 

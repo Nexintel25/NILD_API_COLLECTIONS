@@ -5,19 +5,24 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/laundry/inventory?tab=clean_stock&page=1&pageSize=10&search=bed
+  url: http://localhost:5000/api/laundry/inventory?page=1&pageSize=10&tab=damaged_stock
   params:
     - name: tab
       value: clean_stock
       type: query
+      disabled: true
     - name: page
       value: "1"
       type: query
     - name: pageSize
       value: "10"
       type: query
-    - name: search
-      value: bed
+    - name: tab
+      value: soiled_stock
+      type: query
+      disabled: true
+    - name: tab
+      value: damaged_stock
       type: query
   auth:
     type: bearer

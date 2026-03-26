@@ -7,16 +7,26 @@ http:
   method: POST
   url: http://localhost:5000/api/auth/patient/request-otp
   headers:
-    - name: Content-Type
+    - name: content-type
       value: application/json
   body:
     type: json
+<<<<<<< HEAD
     data: |-
       {
         "tenant_id": 1,
         //"username": "NILD-20260226-0003",
         "email": "sumann@svu.ac.in"
       }
+=======
+    data: "{\r
+
+      \  \"tenant_id\": 1,\r
+
+      \  \"identifier\": \"sumann@svu.ac.in\"\r
+
+      }"
+>>>>>>> a2879375b98ff68f7d9c4a06ca7732f693d99d90
   auth: inherit
 
 settings:

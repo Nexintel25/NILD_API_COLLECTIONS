@@ -15,8 +15,13 @@ http:
     type: json
     data: |-
       {
+<<<<<<< HEAD
           "patientId": "149",
           "admissionType": "regular",
+=======
+          "patientId": "19",
+          "admissionType": "emergency",
+>>>>>>> a2879375b98ff68f7d9c4a06ca7732f693d99d90
           "reasonForAdmission": "Acute appendicitis with severe abdominal pain requiring urgent surgical intervention",
           "dateOfInjury": "2026-02-25T14:00:00.000Z",
           "priority": "emergency",

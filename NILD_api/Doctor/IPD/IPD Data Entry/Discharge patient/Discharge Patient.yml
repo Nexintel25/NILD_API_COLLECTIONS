@@ -5,7 +5,11 @@ info:
 
 http:
   method: PATCH
+<<<<<<< HEAD
   url: http://localhost:5000/api/doctor-ipd/discharge/by-upid/NILD-20260310-0028
+=======
+  url: http://localhost:5000/api/doctor-ipd/discharge/by-upid/NILD-20260313-0009
+>>>>>>> a2879375b98ff68f7d9c4a06ca7732f693d99d90
   headers:
     - name: Content-Type
       value: application/json
