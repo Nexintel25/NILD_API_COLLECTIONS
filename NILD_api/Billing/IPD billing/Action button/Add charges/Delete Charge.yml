@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: http://localhost:5000/api/billing/ipd/charges/1
+  url: http://localhost:5000/api/billing/ipd/charges/166
   headers:
     - name: authorization
       value: "Bearer "
