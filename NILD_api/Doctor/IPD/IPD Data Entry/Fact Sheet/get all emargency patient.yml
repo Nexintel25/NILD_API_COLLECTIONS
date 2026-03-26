@@ -1,0 +1,29 @@
+info:
+  name: "get all emargency patient "
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5000/api/doctor-ipd/fact-sheet/emergencies?limit=15&offset=0
+  headers:
+    - name: Authorization
+      value: Bearer <YOUR_JWT_TOKEN>
+    - name: Accept
+      value: application/json
+  params:
+    - name: limit
+      value: "15"
+      type: query
+    - name: offset
+      value: "0"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoidXNlcl9kb2N0b3IiLCJlbWFpbCI6ImRvY3RvckBhcGV4LmNvbSIsImVtcGxveWVlX2lkIjoiRE9DMDAwMiIsImZhY2lsaXR5X2lkIjoxLCJyb2xlX2lkIjo1LCJyb2xlX2NvZGUiOiJET0NUT1JTX09QRF9JUEQiLCJpYXQiOjE3NzQ0MjI2NzgsImV4cCI6MTc4OTk3NDY3OH0.GVuTsiIGlZRtxXBAqz0TPW0mVKCkhAWN5MZyb8qEdTs
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

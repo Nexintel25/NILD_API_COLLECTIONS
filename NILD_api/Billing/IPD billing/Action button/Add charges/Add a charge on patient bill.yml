@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5000/api/billing/ipd/admission/9/charges
+  url: http://localhost:5000/api/billing/ipd/admission/28/charges
   headers:
     - name: authorization
       value: "Bearer "
