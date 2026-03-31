@@ -5,26 +5,32 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/pharmacy/grn?search=GRN-44&date=2024-05-17&supplierId=1&status=accepted&page=1&limit=10
+  url: http://localhost:5000/api/pharmacy/grn
   params:
     - name: search
       value: GRN-44
       type: query
+      disabled: true
     - name: date
       value: 2024-05-17
       type: query
+      disabled: true
     - name: supplierId
       value: "1"
       type: query
+      disabled: true
     - name: status
       value: accepted
       type: query
+      disabled: true
     - name: page
       value: "1"
       type: query
+      disabled: true
     - name: limit
       value: "10"
       type: query
+      disabled: true
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0ZW5hbnRfaWQiOjEsInVzZXJuYW1lIjoiZG9jdG9yX3VzZXIiLCJlbWFpbCI6ImRvY3RvckBob3NwaXRhbC5jb20iLCJlbXBsb3llZV9pZCI6IkVNUDAwMSIsImZhY2lsaXR5X2lkIjpudWxsLCJyb2xlX2lkIjoxLCJyb2xlX2NvZGUiOiJkb2N0b3IiLCJpYXQiOjE3NzEyMjMwOTUsImV4cCI6MTc4Njc3NTA5NX0.m24vi0WruVuGnFkcMa4R2iBLrjFB3lo4fLSytsmNFK0

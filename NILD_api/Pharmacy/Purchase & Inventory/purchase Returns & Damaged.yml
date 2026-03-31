@@ -5,11 +5,12 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/pharmacy/returns-damaged?search=RET-102
+  url: http://localhost:5000/api/pharmacy/returns-damaged
   params:
     - name: search
       value: RET-102
       type: query
+      disabled: true
     - name: date
       value: 2026-02-19
       type: query

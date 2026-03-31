@@ -5,7 +5,7 @@ info:
 
 http:
   method: post
-  url: http://localhost:5000/api/pharmacy/billing/prescriptions/37/process
+  url: http://localhost:5000/api/pharmacy/billing/prescriptions/58/process
   headers:
     - name: Content-Type
       value: application/json

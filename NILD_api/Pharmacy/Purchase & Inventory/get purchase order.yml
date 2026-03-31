@@ -5,14 +5,16 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5000/api/pharmacy/purchase-orders?page=1&limit=10&status=rejected
+  url: http://localhost:5000/api/pharmacy/purchase-orders
   params:
     - name: page
       value: "1"
       type: query
+      disabled: true
     - name: limit
       value: "10"
       type: query
+      disabled: true
     - name: status
       value: pending
       type: query
@@ -28,6 +30,7 @@ http:
     - name: status
       value: rejected
       type: query
+      disabled: true
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMywidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfcGhhcm1hY3kiLCJlbWFpbCI6InBoYXJtYWN5QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJQSEEwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjEzLCJyb2xlX2NvZGUiOiJQSEFSTUFDWV9NRURJQ0lORSIsImlhdCI6MTc3Mzg0MDA0MCwiZXhwIjoxNzg5MzkyMDQwfQ.9_rvSaj3XxtpUdfMZPlZ8rxgN2PMM2RFkaWz-v51sNA
