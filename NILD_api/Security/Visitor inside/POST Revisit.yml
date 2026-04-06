@@ -15,7 +15,7 @@ http:
     type: json
     data: |-
       {
-        "previousPassNumber": "VND-001",
+        "previousPassNumber": "VPASS-2026-00032",
         "department": "Cardiology",
         "purpose": "Follow-up visit",
         "gateNumber": "Gate 2",

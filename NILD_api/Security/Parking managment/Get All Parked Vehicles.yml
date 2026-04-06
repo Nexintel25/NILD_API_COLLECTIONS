@@ -5,8 +5,10 @@ info:
 
 http:
   method: GET
-  url: ""
-  auth: inherit
+  url: http://localhost:5000/api/security/parking-logs
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc2VjdXJpdHkiLCJlbWFpbCI6InNlY3VyaXR5QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTRUMwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjIwLCJyb2xlX2NvZGUiOiJTRUNVUklUWSIsImlhdCI6MTc3NDk1MzM5NiwiZXhwIjoxNzkwNTA1Mzk2fQ.mJN0NnQXnGlTO84qU0ZYvG54k-rQrdgEYPHM6Qbb9ws
 
 settings:
   encodeUrl: true

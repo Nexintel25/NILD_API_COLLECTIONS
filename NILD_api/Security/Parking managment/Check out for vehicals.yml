@@ -1,0 +1,22 @@
+info:
+  name: Check out for vehicals
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5000/api/security/parking-logs/checkout/V-011
+  headers:
+    - name: Authorization
+      value: Bearer YOUR_JWT_TOKEN
+    - name: Content-Type
+      value: application/json
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMCwidGVuYW50X2lkIjoxLCJ1c2VybmFtZSI6InVzZXJfc2VjdXJpdHkiLCJlbWFpbCI6InNlY3VyaXR5QGFwZXguY29tIiwiZW1wbG95ZWVfaWQiOiJTRUMwMDAxIiwiZmFjaWxpdHlfaWQiOjEsInJvbGVfaWQiOjIwLCJyb2xlX2NvZGUiOiJTRUNVUklUWSIsImlhdCI6MTc3NTAzNzQ4MCwiZXhwIjoxNzkwNTg5NDgwfQ.A2UB-iuDIVkjzJJop3Q3LQS7cjnLoCtRo8wU7vxDPmY
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
