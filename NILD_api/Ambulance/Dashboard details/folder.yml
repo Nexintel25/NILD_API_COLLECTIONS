@@ -1,0 +1,7 @@
+info:
+  name: Dashboard details
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit
