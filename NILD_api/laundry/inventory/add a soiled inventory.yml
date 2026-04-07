@@ -10,7 +10,7 @@ http:
     type: json
     data: |+
       {
-        "linen_type_id": 1,
+        "linen_type_id": 7,
         "location": "SOILED_AREA",
         "status": {
           "soiled_stock": 25
